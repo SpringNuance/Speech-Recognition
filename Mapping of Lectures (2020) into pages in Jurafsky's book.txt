@@ -1,0 +1,99 @@
+
+
+JM1: SPEECH and LANGUAGE PROCESSING
+An Introduction to Natural Language Processing,
+Computational Linguistics, and Speech Recognition
+by Daniel Jurafsky and James H. Martin 
+First Edition http://www.cs.colorado.edu/~martin/slp.html
+
+JM2: Second Edition http://www.cs.colorado.edu/~martin/slp.html
+
+JM3: Third Edition (draft) http://web.stanford.edu/~jurafsky/slp3/
+
+Lecture 1 - First Lecture
+
+JM1: 
+7.5 Acoustic Processing of Speech . . . . . . .258
+    Sound Waves . . . . . . . . . . . . . . . .258
+    How to Interpret a Waveform . . . . . . . .259
+    Spectra . . . . . . . . . . . . . . . . . .260
+    Feature Extraction . . . . . . . .  . . . .264
+7.6 Computing Acoustic Probabilities .. . . . .265-270
+
+JM2:
+Chapter 9: Automatic Speech Recognition
+
+JM3: 
+Chapter 29: Speech Recognition 
+
+
+Lecture 2 - Phoneme modeling
+
+JM1:
+4.1 Speech Sounds and Phonetic Transcription . 92
+    The Vocal Organs . . . . . . . . . . . . . 94-97
+4.2 The Phoneme and Phonological Rules . . . . 102-104
+7.7 Training a Speech Recognizer . . . . . . . 270-272
+7.1 Speech Recognition Architecture . . . . . .235
+7.2 Overview of Hidden Markov Models . . . . . 239-242
+5.9 Weighted Automata . . . . . . . . . . . . .167
+    Computing Likelihoods: The Forward Algorithm 169
+    Decoding: The Viterbi Algorithm . . . . . .174
+    Weighted Automata and Segmentation . . . . 178-180
+D Training HMMs: The Forward-Backward Algorithm 841
+  Continuous Probability Densities . . . . . . 847-850
+
+JM2: 
+Chapter 6: Hidden Markov and Maximum Entropy Models
+Chapter 7: Phonetics
+Chapter 9: Automatic Speech Recognition
+
+JM3: 
+Chapter 8 Hidden Markov Models
+Chapter 29: Speech Recognition 
+
+
+Lecture 3 - Language Modeling
+
+JM1:
+4.6 Mapping Text to Phones for TTS . . . . . . 119
+    Pronunciation dictionaries . . . . . . . . 119-121
+6.1 Counting Words in Corpora . . . . . . . .  191
+6.2 Simple (Unsmoothed) N-grams . . . . . . . .194
+    More on N-grams and their sensitivity . . .199
+6.3 Smoothing . . . . . . . . . . . . . . . . .204
+    Add-One Smoothing . . . . . . . . . . . . .205
+    Witten-Bell Discounting . . . . . . . . . .208
+    Good-Turing Discounting . . . . . . . . . .212
+6.4 Backoff . . . . . . . . . . . . . . . . . .214
+    Combining Backoff with Discounting . . . . 215
+6.5 Deleted Interpolation . . . . . . . . . . .217-218
+6.7 Entropy . . . . . . . . . . . . . . . . . .221
+    Cross Entropy for Comparing Models . . . . 224-225
+
+JM2: Chapter 4: Ngrams
+
+JM3: 
+Chapter 4: Ngrams
+Chapter 7: Neural LMs
+
+Lecture 4 - Continuous speech recognition
+
+JM1:
+7.3 The Viterbi Algorithm Revisited . . . . . .242 
+7.4 Advanced Methods for Decoding . . . . . . .250
+    A* Decoding . . . . . . . . . . . . . . . .252-258
+5.6 Minimum Edit Distance . . . . . . . . . . .151-154
+
+JM2:
+Chapter 9: Automatic Speech Recognition
+Chapter 10: Speech Recognition: Advanced Topics
+
+JM3:
+Chapter 29: Speech Recognition 
+
+Lecture 5: End-to-end ASR
+
+
+
+
