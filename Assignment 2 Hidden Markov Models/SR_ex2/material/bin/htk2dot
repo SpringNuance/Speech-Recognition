@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+
+print "digraph lattice {\n";
+
+while (<>) {
+    next if (/^\#.*/);
+
+    s/\\(\d\d\d)/chr(oct($1))/ge;
+
+    # start and end nodes
+    if (/^start=(\d+)\s+end=(\d+)/) {
+	$init = $1;
+	$final = $2;
+	next;
+    }
+
+    # node
+    if (/^I=(\d+)/) {
+	$n = $1;
+	$w = "";
+	if (/W=(\S+)/) {
+	    $w = "\\n$1";
+	}
+	$color = "blue";
+	$color = "red" if ($n == $init);
+	print "\t$n [label=\"${n}${w}\",color=$color];\n";
+    }
+
+    # arc
+    if (/^J=(\d+)\s+/) {
+	$start = $end = $word = $a = $l = "";
+	$start = $1 if (/S=(\d+)/);
+	$end = $1 if (/E=(\d+)/);
+	$word = $1 if (/W=(\S+)/);
+	$a = $1 if (/a=(\S+)/);
+	$l = $1 if (/l=(\S+)/);
+	printf "\t$start -> $end [label=\"$word \\nam=%.2f\\nlm=%.2f\"];\n", $a, $l;
+    }
+}
+
+print "}\n";

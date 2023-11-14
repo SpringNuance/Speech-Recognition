@@ -1,0 +1,18 @@
+
+grep MEAN hmm-2/hmmdefs | wc -l
+grep MEAN hmm-3/hmmdefs | wc -l
+grep MEAN hmm-4/hmmdefs | wc -l
+grep MEAN hmm-5/hmmdefs | wc -l
+grep MEAN hmm-6/hmmdefs | wc -l
+
+grep MEAN hmm-f-2/hmmdefs | wc -l
+grep MEAN hmm-f-3/hmmdefs | wc -l
+grep MEAN hmm-f-4/hmmdefs | wc -l
+grep MEAN hmm-f-5/hmmdefs | wc -l
+grep MEAN hmm-f-6/hmmdefs | wc -l
+
+grep MEAN hmm-m-2/hmmdefs | wc -l
+grep MEAN hmm-m-3/hmmdefs | wc -l
+grep MEAN hmm-m-4/hmmdefs | wc -l
+grep MEAN hmm-m-5/hmmdefs | wc -l
+grep MEAN hmm-m-6/hmmdefs | wc -l

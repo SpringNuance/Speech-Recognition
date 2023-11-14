@@ -1,0 +1,22 @@
+This is Kaldi. See http://kaldi-asr.org/doc/about.html
+
+This directory contains the Kaldi binaries compiled for the paniikki classroom environment.
+On your machine you need the corresponding scripts. To get the correct version of the scripts,
+the easiest is to clone from this repository:
+
+git clone /work/courses/T/S/89/5150/general/bin/kaldi-paniikki 
+
+Make sure you are on the asr-2018 branch, run:
+
+git checkout asr-2018
+
+Now you are setup for running things off these binaries.
+Then go to the mini_librispeech recipe:
+
+cd egs/mini_librispeech/s5
+
+Now just copy the data that you are already given, run:
+
+bash copy-data.sh
+
+Now you are set! You should continue by training a DNN acoustic model, see run.sh and local/run_tdnn.sh . You should be able to start directly from running local/run_tdnn.sh

@@ -1,0 +1,29 @@
+# Compiled extensionless executable files in /src/*/
+/src/*/*
+!/src/*/*.*
+!/src/doc/*
+!/src/*/Makefile
+!/src/*/README
+
+# Compiled Object files
+*.o
+
+# Compiled Static and Dynamic libraries
+*.a
+*.so
+*.dylib
+*.dSYM
+
+# Make dependencies
+.depend.mk
+
+# /src/
+/src/config.mk
+
+# backups
+*~
+*.bak
+project.xcworkspace
+
+# swp files
+*.swp

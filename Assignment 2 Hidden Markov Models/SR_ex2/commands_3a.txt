@@ -1,0 +1,68 @@
+cd SR_ex2
+
+mkdir ex2_f
+mkdir ex2_m
+mkdir ex2_both
+
+# Female dependent model
+
+./hmm_train_f.pl material/bin material/data/rm1_train/rm1_train.mlf material/data/rm1_train/rm1_train_f.scp \
+material/ex2/monophones material/ex2/config
+
+# Perform recognition using the new network and lexicon
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-f-6/macros -H hmm-f-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word_f.scp -i ex2_f/results material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_f/results
+
+
+# Male dependent model
+
+./hmm_train_m.pl material/bin material/data/rm1_train/rm1_train.mlf material/data/rm1_train/rm1_train.scp \
+material/ex2/monophones material/ex2/config
+
+# Perform recognition using the new network and lexicon
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-m-6/macros -H hmm-m-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word_m.scp -i ex2_m/results material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_m/results
+
+
+# Gender dependent combined model
+
+./hmm_train.pl material/bin material/data/rm1_train/rm1_train.mlf material/data/rm1_train/rm1_train.scp \
+material/ex2/monophones material/ex2/config
+
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-6/macros -H hmm-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i ex2_both/results material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_m/results ex2_f/results
+
+
+
+
+
+
+#  Testing male model on combined data
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-m-6/macros -H hmm-m-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i ex2_m/results_m_on_common material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_m/results_m_on_common
+
+# Testing male model on female data
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-m-6/macros -H hmm-m-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word_f.scp -i ex2_m/results_m_on_f material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_m/results_m_on_f
+
+# Testing female model on combined data
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-f-6/macros -H hmm-f-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i ex2_f/results_f_on_common material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_f/results_f_on_common
+
+# Testing female model on male data
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-f-6/macros -H hmm-f-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word_m.scp -i ex2_f/results_f_on_m material/ex2/w150.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null ex2_f/results_f_on_m

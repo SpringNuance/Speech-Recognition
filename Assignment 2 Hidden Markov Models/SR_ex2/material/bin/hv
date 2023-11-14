@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/work/courses/T/S/89/5150/general/bin/htk2dot "$@" | /work/courses/T/S/89/5150/general/bin/dv

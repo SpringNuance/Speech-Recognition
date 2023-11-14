@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Rendering postscript file..." >&2
+
+tmpfile="/tmp/dv."`hostname`".$$"
+echo $tmpfile
+dot -Gsize=11,8 -Grankdir=LR -Grotate=-90 -Gcharset=latin1 -Tps > "$tmpfile"
+evince "$tmpfile"
+rm -f "$tmpfile"
+

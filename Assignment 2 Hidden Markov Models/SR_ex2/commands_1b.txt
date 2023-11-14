@@ -1,0 +1,10 @@
+
+
+cd SR_ex2
+
+# Rerun the recognition test using the updated w150_loop.htk 
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-6/macros -H hmm-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i results150 material/ex2/w150.dict material/ex2/monophones
+
+# Compute the word error rate again for the updated result on lexicon 150 
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null results150

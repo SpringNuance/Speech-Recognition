@@ -1,0 +1,11 @@
+cd SR_ex2
+
+# Recognize evaluation set using all models from hmm-2 to hmm-6
+for i in $(seq 2 6); do \
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-${i}/macros -H hmm-${i}/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i results${i} material/ex2/w150.dict material/ex2/monophones; done
+
+# Computing the error rate of each result from hmm-2 to hmm-6
+for i in $(seq 2 6); do \ 
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null results${i}; done
+

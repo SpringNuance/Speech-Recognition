@@ -1,0 +1,40 @@
+Setup commands for the exercise:
+
+mkdir SR_ex2
+cd SR_ex2
+ln -s /work/courses/T/S/89/5150/general material
+mkdir hmm-0
+mkdir hmm-1
+
+material/ex2/proto2hmms.pl material/ex2/hmm_proto material/ex2/monophones hmm-0/
+
+material/bin/HInit -A -T 1 -C material/ex2/config \
+-S material/data/rm1_train/rm1_train.scp -I material/data/rm1_train/rm1_train.mlf \
+-M hmm-1 -H material/ex2/macros -i 5 -l sp hmm-0/sp
+
+for p in `cat material/ex2/monophones`; do material/bin/HInit -A -T 1 \
+-C material/ex2/config -S material/data/rm1_train/rm1_train.scp \
+-I material/data/rm1_train/rm1_train.mlf -M hmm-1 -H material/ex2/macros \
+-i 5 -l $p hmm-0/$p; done
+
+material/ex2/collect_hmms.pl material/ex2/monophones hmm-1 > hmm-1/hmmdefs
+
+mkdir hmm-2
+
+material/bin/HERest -T 1 -C material/ex2/config -I material/data/rm1_train/rm1_train.mlf \
+-t 250.0 150.0 1000.0 -S material/data/rm1_train/rm1_train.scp -H hmm-1/macros -H hmm-1/hmmdefs \
+-M hmm-2 -s hmm-2/stats material/ex2/monophones > hmm-2/train.log
+
+cp material/ex2/hmm_train.pl .
+
+./hmm_train.pl material/bin material/data/rm1_train/rm1_train.mlf material/data/rm1_train/rm1_train.scp \
+material/ex2/monophones material/ex2/config
+
+cut -f 1 -d ' ' material/ex2/w600.dict > w600.list
+
+material/bin/HBuild -t SILENCE SILENCE -T 1 w600.list w600_loop.htk
+
+material/bin/HVite -T 1 -w w600_loop.htk -H hmm-6/macros -H hmm-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i results material/ex2/w600.dict material/ex2/monophones
+
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null results

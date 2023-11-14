@@ -1,0 +1,6 @@
+
+cd SR_ex2
+
+# Extract the average log probability of the training data from 
+# the log files from each hmm-{i} folder, i in 1 to 6
+grep "average log prob" hmm-?/train*log

@@ -1,0 +1,17 @@
+Question 1a
+
+cd SR_ex2
+
+# Extract the first field from the lexicon, which contains the words
+cut -f 1 -d ' ' material/ex2/w150.dict > w150.list
+
+# Build the recognition network using HBuild
+material/bin/HBuild -t SILENCE SILENCE -T 1 w150.list w150_loop.htk
+
+# Perform recognition using the new network and lexicon
+material/bin/HVite -T 1 -w w150_loop.htk -H hmm-6/macros -H hmm-6/hmmdefs -C material/ex2/config \
+-t 250 -S material/data/rm1_eval/rm1_eval_word.scp -i results150 material/ex2/w150.dict material/ex2/monophones
+
+# Compute the word error rate
+material/bin/HResults -h -I material/data/rm1_eval/rm1_eval_word.mlf /dev/null results150
+

@@ -1,0 +1,12 @@
+prefix=/work/courses/T/S/89/5150/general
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SoX
+Description: Audio file format and effects library
+Version: 14.4.1
+URL: http://sox.sourceforge.net
+Libs: -L${libdir} -lsox
+Libs.private: -lm 
+Cflags: -I${includedir}

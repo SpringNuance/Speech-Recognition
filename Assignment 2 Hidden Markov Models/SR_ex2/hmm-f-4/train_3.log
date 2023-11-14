@@ -1,0 +1,2106 @@
+HERest  ML Updating: Transitions Means Variances MixWeights 
+
+ System is PLAIN
+45 Logical/45 Physical Models Loaded, VecSize=39
+2 MMF input files
+Pruning-On[250.0 150.0 1000.0]
+ Processing Data: sp015spk.mfcc; Label sp015spk.lab
+ Utterance prob per frame = -7.125170e+01
+ Processing Data: sp015spl.mfcc; Label sp015spl.lab
+ Utterance prob per frame = -7.463345e+01
+ Processing Data: sp049spk.mfcc; Label sp049spk.lab
+ Utterance prob per frame = -7.459571e+01
+ Processing Data: sp049spl.mfcc; Label sp049spl.lab
+ Utterance prob per frame = -7.614806e+01
+ Processing Data: sp087spk.mfcc; Label sp087spk.lab
+ Utterance prob per frame = -7.968275e+01
+ Processing Data: sp087spl.mfcc; Label sp087spl.lab
+ Utterance prob per frame = -7.596445e+01
+ Processing Data: sp128spk.mfcc; Label sp128spk.lab
+ Utterance prob per frame = -7.806952e+01
+ Processing Data: sp128spl.mfcc; Label sp128spl.lab
+ Utterance prob per frame = -7.669911e+01
+ Processing Data: sp172spk.mfcc; Label sp172spk.lab
+ Utterance prob per frame = -7.913550e+01
+ Processing Data: sp172spl.mfcc; Label sp172spl.lab
+ Utterance prob per frame = -7.803151e+01
+ Processing Data: sp209spk.mfcc; Label sp209spk.lab
+ Utterance prob per frame = -7.959435e+01
+ Processing Data: sp209spl.mfcc; Label sp209spl.lab
+ Utterance prob per frame = -7.361265e+01
+ Processing Data: sp246spk.mfcc; Label sp246spk.lab
+ Utterance prob per frame = -6.666354e+01
+ Processing Data: sp246spl.mfcc; Label sp246spl.lab
+ Utterance prob per frame = -7.890622e+01
+ Processing Data: sp289spk.mfcc; Label sp289spk.lab
+ Utterance prob per frame = -7.780436e+01
+ Processing Data: sp289spl.mfcc; Label sp289spl.lab
+ Utterance prob per frame = -7.542303e+01
+ Processing Data: sp328spk.mfcc; Label sp328spk.lab
+ Utterance prob per frame = -8.230036e+01
+ Processing Data: sp328spl.mfcc; Label sp328spl.lab
+ Utterance prob per frame = -7.610036e+01
+ Processing Data: sp372spk.mfcc; Label sp372spk.lab
+ Utterance prob per frame = -7.220133e+01
+ Processing Data: sp372spl.mfcc; Label sp372spl.lab
+ Utterance prob per frame = -7.752801e+01
+ Processing Data: sp413spk.mfcc; Label sp413spk.lab
+ Utterance prob per frame = -7.738586e+01
+ Processing Data: sp413spl.mfcc; Label sp413spl.lab
+ Utterance prob per frame = -7.303387e+01
+ Processing Data: sp444spk.mfcc; Label sp444spk.lab
+ Utterance prob per frame = -7.530926e+01
+ Processing Data: sp444spl.mfcc; Label sp444spl.lab
+ Utterance prob per frame = -7.485738e+01
+ Processing Data: sp485spk.mfcc; Label sp485spk.lab
+ Utterance prob per frame = -7.658010e+01
+ Processing Data: sp485spl.mfcc; Label sp485spl.lab
+ Utterance prob per frame = -7.565301e+01
+ Processing Data: sp531spk.mfcc; Label sp531spk.lab
+ Utterance prob per frame = -7.593407e+01
+ Processing Data: sp531spl.mfcc; Label sp531spl.lab
+ Utterance prob per frame = -7.925524e+01
+ Processing Data: sp566spk.mfcc; Label sp566spk.lab
+ Utterance prob per frame = -7.747887e+01
+ Processing Data: sp566spl.mfcc; Label sp566spl.lab
+ Utterance prob per frame = -8.042833e+01
+ Processing Data: sp028spk.mfcc; Label sp028spk.lab
+ Utterance prob per frame = -7.110282e+01
+ Processing Data: sp028spl.mfcc; Label sp028spl.lab
+ Utterance prob per frame = -7.229171e+01
+ Processing Data: sp061spk.mfcc; Label sp061spk.lab
+ Utterance prob per frame = -7.293865e+01
+ Processing Data: sp061spl.mfcc; Label sp061spl.lab
+ Utterance prob per frame = -7.103150e+01
+ Processing Data: sp104spk.mfcc; Label sp104spk.lab
+ Utterance prob per frame = -7.360772e+01
+ Processing Data: sp104spl.mfcc; Label sp104spl.lab
+ Utterance prob per frame = -7.050329e+01
+ Processing Data: sp149spk.mfcc; Label sp149spk.lab
+ Utterance prob per frame = -7.252984e+01
+ Processing Data: sp149spl.mfcc; Label sp149spl.lab
+ Utterance prob per frame = -6.683993e+01
+ Processing Data: sp188spk.mfcc; Label sp188spk.lab
+ Utterance prob per frame = -7.287100e+01
+ Processing Data: sp188spl.mfcc; Label sp188spl.lab
+ Utterance prob per frame = -7.371046e+01
+ Processing Data: sp223spk.mfcc; Label sp223spk.lab
+ Utterance prob per frame = -7.294515e+01
+ Processing Data: sp223spl.mfcc; Label sp223spl.lab
+ Utterance prob per frame = -6.766443e+01
+ Processing Data: sp262spk.mfcc; Label sp262spk.lab
+ Utterance prob per frame = -7.711747e+01
+ Processing Data: sp262spl.mfcc; Label sp262spl.lab
+ Utterance prob per frame = -7.127628e+01
+ Processing Data: sp303spk.mfcc; Label sp303spk.lab
+ Utterance prob per frame = -7.717072e+01
+ Processing Data: sp303spl.mfcc; Label sp303spl.lab
+ Utterance prob per frame = -7.110876e+01
+ Processing Data: sp346spk.mfcc; Label sp346spk.lab
+ Utterance prob per frame = -7.571281e+01
+ Processing Data: sp346spl.mfcc; Label sp346spl.lab
+ Utterance prob per frame = -7.154209e+01
+ Processing Data: sp385spk.mfcc; Label sp385spk.lab
+ Utterance prob per frame = -8.050425e+01
+ Processing Data: sp385spl.mfcc; Label sp385spl.lab
+ Utterance prob per frame = -7.141650e+01
+ Processing Data: sp425spk.mfcc; Label sp425spk.lab
+ Utterance prob per frame = -7.953944e+01
+ Processing Data: sp425spl.mfcc; Label sp425spl.lab
+ Utterance prob per frame = -7.252818e+01
+ Processing Data: sp456spk.mfcc; Label sp456spk.lab
+ Utterance prob per frame = -7.532430e+01
+ Processing Data: sp456spl.mfcc; Label sp456spl.lab
+ Utterance prob per frame = -7.200350e+01
+ Processing Data: sp500spk.mfcc; Label sp500spk.lab
+ Utterance prob per frame = -7.636153e+01
+ Processing Data: sp500spl.mfcc; Label sp500spl.lab
+ Utterance prob per frame = -7.224482e+01
+ Processing Data: sp543spk.mfcc; Label sp543spk.lab
+ Utterance prob per frame = -7.045394e+01
+ Processing Data: sp543spl.mfcc; Label sp543spl.lab
+ Utterance prob per frame = -7.016031e+01
+ Processing Data: sp586spk.mfcc; Label sp586spk.lab
+ Utterance prob per frame = -7.520251e+01
+ Processing Data: sp586spl.mfcc; Label sp586spl.lab
+ Utterance prob per frame = -7.318928e+01
+ Processing Data: sp036spk.mfcc; Label sp036spk.lab
+ Utterance prob per frame = -7.141663e+01
+ Processing Data: sp036spl.mfcc; Label sp036spl.lab
+ Utterance prob per frame = -6.637533e+01
+ Processing Data: sp073spk.mfcc; Label sp073spk.lab
+ Utterance prob per frame = -6.949612e+01
+ Processing Data: sp073spl.mfcc; Label sp073spl.lab
+ Utterance prob per frame = -7.012432e+01
+ Processing Data: sp113spk.mfcc; Label sp113spk.lab
+ Utterance prob per frame = -7.896504e+01
+ Processing Data: sp113spl.mfcc; Label sp113spl.lab
+ Utterance prob per frame = -6.871937e+01
+ Processing Data: sp161spk.mfcc; Label sp161spk.lab
+ Utterance prob per frame = -7.494789e+01
+ Processing Data: sp161spl.mfcc; Label sp161spl.lab
+ Utterance prob per frame = -7.063939e+01
+ Processing Data: sp199spk.mfcc; Label sp199spk.lab
+ Utterance prob per frame = -7.566470e+01
+ Processing Data: sp199spl.mfcc; Label sp199spl.lab
+ Utterance prob per frame = -7.230614e+01
+ Processing Data: sp234spk.mfcc; Label sp234spk.lab
+ Utterance prob per frame = -7.858893e+01
+ Processing Data: sp234spl.mfcc; Label sp234spl.lab
+ Utterance prob per frame = -6.800814e+01
+ Processing Data: sp271spk.mfcc; Label sp271spk.lab
+ Utterance prob per frame = -7.239232e+01
+ Processing Data: sp271spl.mfcc; Label sp271spl.lab
+ Utterance prob per frame = -7.226154e+01
+ Processing Data: sp310spk.mfcc; Label sp310spk.lab
+ Utterance prob per frame = -7.075050e+01
+ Processing Data: sp310spl.mfcc; Label sp310spl.lab
+ Utterance prob per frame = -6.878114e+01
+ Processing Data: sp361spk.mfcc; Label sp361spk.lab
+ Utterance prob per frame = -7.347165e+01
+ Processing Data: sp361spl.mfcc; Label sp361spl.lab
+ Utterance prob per frame = -7.316185e+01
+ Processing Data: sp404spk.mfcc; Label sp404spk.lab
+ Utterance prob per frame = -7.957775e+01
+ Processing Data: sp404spl.mfcc; Label sp404spl.lab
+ Utterance prob per frame = -7.067360e+01
+ Processing Data: sp434spk.mfcc; Label sp434spk.lab
+ Utterance prob per frame = -7.710546e+01
+ Processing Data: sp434spl.mfcc; Label sp434spl.lab
+ Utterance prob per frame = -6.955372e+01
+ Processing Data: sp470spk.mfcc; Label sp470spk.lab
+ Utterance prob per frame = -6.747260e+01
+ Processing Data: sp470spl.mfcc; Label sp470spl.lab
+ Utterance prob per frame = -6.791539e+01
+ Processing Data: sp517spk.mfcc; Label sp517spk.lab
+ Utterance prob per frame = -6.763658e+01
+ Processing Data: sp517spl.mfcc; Label sp517spl.lab
+ Utterance prob per frame = -7.032541e+01
+ Processing Data: sp551spk.mfcc; Label sp551spk.lab
+ Utterance prob per frame = -7.215062e+01
+ Processing Data: sp551spl.mfcc; Label sp551spl.lab
+ Utterance prob per frame = -6.803526e+01
+ Processing Data: sp600spk.mfcc; Label sp600spk.lab
+ Utterance prob per frame = -7.389064e+01
+ Processing Data: sp600spl.mfcc; Label sp600spl.lab
+ Utterance prob per frame = -6.788751e+01
+ Processing Data: sp035spk.mfcc; Label sp035spk.lab
+ Utterance prob per frame = -7.518241e+01
+ Processing Data: sp035spl.mfcc; Label sp035spl.lab
+ Utterance prob per frame = -7.304353e+01
+ Processing Data: sp072spk.mfcc; Label sp072spk.lab
+ Utterance prob per frame = -6.982530e+01
+ Processing Data: sp072spl.mfcc; Label sp072spl.lab
+ Utterance prob per frame = -7.161478e+01
+ Processing Data: sp112spk.mfcc; Label sp112spk.lab
+ Utterance prob per frame = -7.932291e+01
+ Processing Data: sp112spl.mfcc; Label sp112spl.lab
+ Utterance prob per frame = -7.038261e+01
+ Processing Data: sp156spk.mfcc; Label sp156spk.lab
+ Utterance prob per frame = -7.725663e+01
+ Processing Data: sp156spl.mfcc; Label sp156spl.lab
+ Utterance prob per frame = -6.758013e+01
+ Processing Data: sp195spk.mfcc; Label sp195spk.lab
+ Utterance prob per frame = -7.165658e+01
+ Processing Data: sp195spl.mfcc; Label sp195spl.lab
+ Utterance prob per frame = -7.325820e+01
+ Processing Data: sp232spk.mfcc; Label sp232spk.lab
+ Utterance prob per frame = -7.915475e+01
+ Processing Data: sp232spl.mfcc; Label sp232spl.lab
+ Utterance prob per frame = -7.536601e+01
+ Processing Data: sp270spk.mfcc; Label sp270spk.lab
+ Utterance prob per frame = -7.216783e+01
+ Processing Data: sp270spl.mfcc; Label sp270spl.lab
+ Utterance prob per frame = -7.017862e+01
+ Processing Data: sp309spk.mfcc; Label sp309spk.lab
+ Utterance prob per frame = -7.503262e+01
+ Processing Data: sp309spl.mfcc; Label sp309spl.lab
+ Utterance prob per frame = -7.067415e+01
+ Processing Data: sp358spk.mfcc; Label sp358spk.lab
+ Utterance prob per frame = -7.257707e+01
+ Processing Data: sp358spl.mfcc; Label sp358spl.lab
+ Utterance prob per frame = -7.191850e+01
+ Processing Data: sp392spk.mfcc; Label sp392spk.lab
+ Utterance prob per frame = -7.655073e+01
+ Processing Data: sp392spl.mfcc; Label sp392spl.lab
+ Utterance prob per frame = -7.309671e+01
+ Processing Data: sp432spk.mfcc; Label sp432spk.lab
+ Utterance prob per frame = -7.822631e+01
+ Processing Data: sp432spl.mfcc; Label sp432spl.lab
+ Utterance prob per frame = -7.185238e+01
+ Processing Data: sp467spk.mfcc; Label sp467spk.lab
+ Utterance prob per frame = -7.385382e+01
+ Processing Data: sp467spl.mfcc; Label sp467spl.lab
+ Utterance prob per frame = -7.335716e+01
+ Processing Data: sp516spk.mfcc; Label sp516spk.lab
+ Utterance prob per frame = -6.680435e+01
+ Processing Data: sp516spl.mfcc; Label sp516spl.lab
+ Utterance prob per frame = -6.984351e+01
+ Processing Data: sp549spk.mfcc; Label sp549spk.lab
+ Utterance prob per frame = -6.845033e+01
+ Processing Data: sp549spl.mfcc; Label sp549spl.lab
+ Utterance prob per frame = -7.061165e+01
+ Processing Data: sp598spk.mfcc; Label sp598spk.lab
+ Utterance prob per frame = -7.805683e+01
+ Processing Data: sp598spl.mfcc; Label sp598spl.lab
+ Utterance prob per frame = -7.239324e+01
+ Processing Data: sp018spk.mfcc; Label sp018spk.lab
+ Utterance prob per frame = -7.912445e+01
+ Processing Data: sp018spl.mfcc; Label sp018spl.lab
+ Utterance prob per frame = -7.190576e+01
+ Processing Data: sp052spk.mfcc; Label sp052spk.lab
+ Utterance prob per frame = -7.796345e+01
+ Processing Data: sp052spl.mfcc; Label sp052spl.lab
+ Utterance prob per frame = -7.210221e+01
+ Processing Data: sp090spk.mfcc; Label sp090spk.lab
+ Utterance prob per frame = -7.146071e+01
+ Processing Data: sp090spl.mfcc; Label sp090spl.lab
+ Utterance prob per frame = -7.114387e+01
+ Processing Data: sp130spk.mfcc; Label sp130spk.lab
+ Utterance prob per frame = -7.874595e+01
+ Processing Data: sp130spl.mfcc; Label sp130spl.lab
+ Utterance prob per frame = -7.184137e+01
+ Processing Data: sp176spk.mfcc; Label sp176spk.lab
+ Utterance prob per frame = -8.051473e+01
+ Processing Data: sp176spl.mfcc; Label sp176spl.lab
+ Utterance prob per frame = -7.286682e+01
+ Processing Data: sp211spk.mfcc; Label sp211spk.lab
+ Utterance prob per frame = -7.570281e+01
+ Processing Data: sp211spl.mfcc; Label sp211spl.lab
+ Utterance prob per frame = -7.229239e+01
+ Processing Data: sp248spk.mfcc; Label sp248spk.lab
+ Utterance prob per frame = -7.025030e+01
+ Processing Data: sp248spl.mfcc; Label sp248spl.lab
+ Utterance prob per frame = -7.047157e+01
+ Processing Data: sp291spk.mfcc; Label sp291spk.lab
+ Utterance prob per frame = -7.449868e+01
+ Processing Data: sp291spl.mfcc; Label sp291spl.lab
+ Utterance prob per frame = -7.264758e+01
+ Processing Data: sp331spk.mfcc; Label sp331spk.lab
+ Utterance prob per frame = -7.984161e+01
+ Processing Data: sp331spl.mfcc; Label sp331spl.lab
+ Utterance prob per frame = -7.333136e+01
+ Processing Data: sp374spk.mfcc; Label sp374spk.lab
+ Utterance prob per frame = -7.812096e+01
+ Processing Data: sp374spl.mfcc; Label sp374spl.lab
+ Utterance prob per frame = -7.419382e+01
+ Processing Data: sp418spk.mfcc; Label sp418spk.lab
+ Utterance prob per frame = -7.822031e+01
+ Processing Data: sp418spl.mfcc; Label sp418spl.lab
+ Utterance prob per frame = -7.546637e+01
+ Processing Data: sp446spk.mfcc; Label sp446spk.lab
+ Utterance prob per frame = -7.573137e+01
+ Processing Data: sp446spl.mfcc; Label sp446spl.lab
+ Utterance prob per frame = -7.490579e+01
+ Processing Data: sp487spk.mfcc; Label sp487spk.lab
+ Utterance prob per frame = -7.483169e+01
+ Processing Data: sp487spl.mfcc; Label sp487spl.lab
+ Utterance prob per frame = -7.264801e+01
+ Processing Data: sp532spk.mfcc; Label sp532spk.lab
+ Utterance prob per frame = -6.850409e+01
+ Processing Data: sp532spl.mfcc; Label sp532spl.lab
+ Utterance prob per frame = -7.257661e+01
+ Processing Data: sp567spk.mfcc; Label sp567spk.lab
+ Utterance prob per frame = -8.029182e+01
+ Processing Data: sp567spl.mfcc; Label sp567spl.lab
+ Utterance prob per frame = -7.313587e+01
+ Processing Data: sp001spk.mfcc; Label sp001spk.lab
+ Utterance prob per frame = -8.032355e+01
+ Processing Data: sp001spl.mfcc; Label sp001spl.lab
+ Utterance prob per frame = -7.126662e+01
+ Processing Data: sp037spk.mfcc; Label sp037spk.lab
+ Utterance prob per frame = -8.198528e+01
+ Processing Data: sp037spl.mfcc; Label sp037spl.lab
+ Utterance prob per frame = -6.899999e+01
+ Processing Data: sp076spk.mfcc; Label sp076spk.lab
+ Utterance prob per frame = -7.146355e+01
+ Processing Data: sp076spl.mfcc; Label sp076spl.lab
+ Utterance prob per frame = -6.966482e+01
+ Processing Data: sp117spk.mfcc; Label sp117spk.lab
+ Utterance prob per frame = -7.552281e+01
+ Processing Data: sp117spl.mfcc; Label sp117spl.lab
+ Utterance prob per frame = -6.768972e+01
+ Processing Data: sp162spk.mfcc; Label sp162spk.lab
+ Utterance prob per frame = -7.610320e+01
+ Processing Data: sp162spl.mfcc; Label sp162spl.lab
+ Utterance prob per frame = -6.896683e+01
+ Processing Data: sp200spk.mfcc; Label sp200spk.lab
+ Utterance prob per frame = -7.420741e+01
+ Processing Data: sp200spl.mfcc; Label sp200spl.lab
+ Utterance prob per frame = -6.938269e+01
+ Processing Data: sp235spk.mfcc; Label sp235spk.lab
+ Utterance prob per frame = -8.261446e+01
+ Processing Data: sp235spl.mfcc; Label sp235spl.lab
+ Utterance prob per frame = -7.204685e+01
+ Processing Data: sp274spk.mfcc; Label sp274spk.lab
+ Utterance prob per frame = -7.630045e+01
+ Processing Data: sp274spl.mfcc; Label sp274spl.lab
+ Utterance prob per frame = -7.167900e+01
+ Processing Data: sp315spk.mfcc; Label sp315spk.lab
+ Utterance prob per frame = -7.460338e+01
+ Processing Data: sp315spl.mfcc; Label sp315spl.lab
+ Utterance prob per frame = -7.182218e+01
+ Processing Data: sp363spk.mfcc; Label sp363spk.lab
+ Utterance prob per frame = -7.541518e+01
+ Processing Data: sp363spl.mfcc; Label sp363spl.lab
+ Utterance prob per frame = -7.200516e+01
+ Processing Data: sp405spk.mfcc; Label sp405spk.lab
+ Utterance prob per frame = -7.370697e+01
+ Processing Data: sp405spl.mfcc; Label sp405spl.lab
+ Utterance prob per frame = -7.001354e+01
+ Processing Data: sp435spk.mfcc; Label sp435spk.lab
+ Utterance prob per frame = -7.740740e+01
+ Processing Data: sp435spl.mfcc; Label sp435spl.lab
+ Utterance prob per frame = -6.928849e+01
+ Processing Data: sp472spk.mfcc; Label sp472spk.lab
+ Utterance prob per frame = -7.515927e+01
+ Processing Data: sp472spl.mfcc; Label sp472spl.lab
+ Utterance prob per frame = -7.311894e+01
+ Processing Data: sp518spk.mfcc; Label sp518spk.lab
+ Utterance prob per frame = -7.172729e+01
+ Processing Data: sp518spl.mfcc; Label sp518spl.lab
+ Utterance prob per frame = -7.283296e+01
+ Processing Data: sp555spk.mfcc; Label sp555spk.lab
+ Utterance prob per frame = -8.015493e+01
+ Processing Data: sp555spl.mfcc; Label sp555spl.lab
+ Utterance prob per frame = -6.938661e+01
+ Processing Data: sp025spk.mfcc; Label sp025spk.lab
+ Utterance prob per frame = -8.274276e+01
+ Processing Data: sp025spl.mfcc; Label sp025spl.lab
+ Utterance prob per frame = -7.710502e+01
+ Processing Data: sp058spk.mfcc; Label sp058spk.lab
+ Utterance prob per frame = -8.340146e+01
+ Processing Data: sp058spl.mfcc; Label sp058spl.lab
+ Utterance prob per frame = -8.031510e+01
+ Processing Data: sp100spk.mfcc; Label sp100spk.lab
+ Utterance prob per frame = -8.078960e+01
+ Processing Data: sp100spl.mfcc; Label sp100spl.lab
+ Utterance prob per frame = -7.772999e+01
+ Processing Data: sp142spk.mfcc; Label sp142spk.lab
+ Utterance prob per frame = -7.381929e+01
+ Processing Data: sp142spl.mfcc; Label sp142spl.lab
+ Utterance prob per frame = -7.614952e+01
+ Processing Data: sp185spk.mfcc; Label sp185spk.lab
+ Utterance prob per frame = -7.371491e+01
+ Processing Data: sp185spl.mfcc; Label sp185spl.lab
+ Utterance prob per frame = -7.398415e+01
+ Processing Data: sp220spk.mfcc; Label sp220spk.lab
+ Utterance prob per frame = -7.992840e+01
+ Processing Data: sp220spl.mfcc; Label sp220spl.lab
+ Utterance prob per frame = -7.375558e+01
+ Processing Data: sp256spk.mfcc; Label sp256spk.lab
+ Utterance prob per frame = -7.879372e+01
+ Processing Data: sp256spl.mfcc; Label sp256spl.lab
+ Utterance prob per frame = -7.526387e+01
+ Processing Data: sp299spk.mfcc; Label sp299spk.lab
+ Utterance prob per frame = -7.894124e+01
+ Processing Data: sp299spl.mfcc; Label sp299spl.lab
+ Utterance prob per frame = -7.885795e+01
+ Processing Data: sp342spk.mfcc; Label sp342spk.lab
+ Utterance prob per frame = -7.331222e+01
+ Processing Data: sp342spl.mfcc; Label sp342spl.lab
+ Utterance prob per frame = -7.332468e+01
+ Processing Data: sp381spk.mfcc; Label sp381spk.lab
+ Utterance prob per frame = -7.845133e+01
+ Processing Data: sp381spl.mfcc; Label sp381spl.lab
+ Utterance prob per frame = -7.525199e+01
+ Processing Data: sp423spk.mfcc; Label sp423spk.lab
+ Utterance prob per frame = -7.819972e+01
+ Processing Data: sp423spl.mfcc; Label sp423spl.lab
+ Utterance prob per frame = -7.522292e+01
+ Processing Data: sp454spk.mfcc; Label sp454spk.lab
+ Utterance prob per frame = -7.559289e+01
+ Processing Data: sp454spl.mfcc; Label sp454spl.lab
+ Utterance prob per frame = -7.575404e+01
+ Processing Data: sp495spk.mfcc; Label sp495spk.lab
+ Utterance prob per frame = -7.350959e+01
+ Processing Data: sp495spl.mfcc; Label sp495spl.lab
+ Utterance prob per frame = -7.580564e+01
+ Processing Data: sp539spk.mfcc; Label sp539spk.lab
+ Utterance prob per frame = -7.819760e+01
+ Processing Data: sp539spl.mfcc; Label sp539spl.lab
+ Utterance prob per frame = -7.340636e+01
+ Processing Data: sp579spk.mfcc; Label sp579spk.lab
+ Utterance prob per frame = -7.454548e+01
+ Processing Data: sp579spl.mfcc; Label sp579spl.lab
+ Utterance prob per frame = -8.245457e+01
+ Processing Data: sp034spk.mfcc; Label sp034spk.lab
+ Utterance prob per frame = -7.624381e+01
+ Processing Data: sp034spl.mfcc; Label sp034spl.lab
+ Utterance prob per frame = -7.098560e+01
+ Processing Data: sp069spk.mfcc; Label sp069spk.lab
+ Utterance prob per frame = -7.805042e+01
+ Processing Data: sp069spl.mfcc; Label sp069spl.lab
+ Utterance prob per frame = -7.025229e+01
+ Processing Data: sp109spk.mfcc; Label sp109spk.lab
+ Utterance prob per frame = -7.427759e+01
+ Processing Data: sp109spl.mfcc; Label sp109spl.lab
+ Utterance prob per frame = -6.996579e+01
+ Processing Data: sp153spk.mfcc; Label sp153spk.lab
+ Utterance prob per frame = -7.637310e+01
+ Processing Data: sp153spl.mfcc; Label sp153spl.lab
+ Utterance prob per frame = -7.058707e+01
+ Processing Data: sp194spk.mfcc; Label sp194spk.lab
+ Utterance prob per frame = -7.694662e+01
+ Processing Data: sp194spl.mfcc; Label sp194spl.lab
+ Utterance prob per frame = -7.211843e+01
+ Processing Data: sp229spk.mfcc; Label sp229spk.lab
+ Utterance prob per frame = -7.535381e+01
+ Processing Data: sp229spl.mfcc; Label sp229spl.lab
+ Utterance prob per frame = -7.119889e+01
+ Processing Data: sp269spk.mfcc; Label sp269spk.lab
+ Utterance prob per frame = -6.809909e+01
+ Processing Data: sp269spl.mfcc; Label sp269spl.lab
+ Utterance prob per frame = -7.142193e+01
+ Processing Data: sp308spk.mfcc; Label sp308spk.lab
+ Utterance prob per frame = -7.231662e+01
+ Processing Data: sp308spl.mfcc; Label sp308spl.lab
+ Utterance prob per frame = -7.311603e+01
+ Processing Data: sp355spk.mfcc; Label sp355spk.lab
+ Utterance prob per frame = -7.587545e+01
+ Processing Data: sp355spl.mfcc; Label sp355spl.lab
+ Utterance prob per frame = -7.696476e+01
+ Processing Data: sp391spk.mfcc; Label sp391spk.lab
+ Utterance prob per frame = -7.403403e+01
+ Processing Data: sp391spl.mfcc; Label sp391spl.lab
+ Utterance prob per frame = -7.147104e+01
+ Processing Data: sp431spk.mfcc; Label sp431spk.lab
+ Utterance prob per frame = -7.541971e+01
+ Processing Data: sp431spl.mfcc; Label sp431spl.lab
+ Utterance prob per frame = -7.506783e+01
+ Processing Data: sp466spk.mfcc; Label sp466spk.lab
+ Utterance prob per frame = -7.634723e+01
+ Processing Data: sp466spl.mfcc; Label sp466spl.lab
+ Utterance prob per frame = -7.426779e+01
+ Processing Data: sp514spk.mfcc; Label sp514spk.lab
+ Utterance prob per frame = -7.088194e+01
+ Processing Data: sp514spl.mfcc; Label sp514spl.lab
+ Utterance prob per frame = -7.534153e+01
+ Processing Data: sp548spk.mfcc; Label sp548spk.lab
+ Utterance prob per frame = -7.384697e+01
+ Processing Data: sp548spl.mfcc; Label sp548spl.lab
+ Utterance prob per frame = -7.349576e+01
+ Processing Data: sp594spk.mfcc; Label sp594spk.lab
+ Utterance prob per frame = -7.808520e+01
+ Processing Data: sp594spl.mfcc; Label sp594spl.lab
+ Utterance prob per frame = -7.135170e+01
+ Processing Data: sp034spk.mfcc; Label sp034spk.lab
+ Utterance prob per frame = -7.920684e+01
+ Processing Data: sp034spl.mfcc; Label sp034spl.lab
+ Utterance prob per frame = -7.611924e+01
+ Processing Data: sp069spk.mfcc; Label sp069spk.lab
+ Utterance prob per frame = -8.106284e+01
+ Processing Data: sp069spl.mfcc; Label sp069spl.lab
+ Utterance prob per frame = -7.947360e+01
+ Processing Data: sp109spk.mfcc; Label sp109spk.lab
+ Utterance prob per frame = -7.704865e+01
+ Processing Data: sp109spl.mfcc; Label sp109spl.lab
+ Utterance prob per frame = -7.100815e+01
+ Processing Data: sp153spk.mfcc; Label sp153spk.lab
+ Utterance prob per frame = -7.783390e+01
+ Processing Data: sp153spl.mfcc; Label sp153spl.lab
+ Utterance prob per frame = -7.206831e+01
+ Processing Data: sp194spk.mfcc; Label sp194spk.lab
+ Utterance prob per frame = -7.647038e+01
+ Processing Data: sp194spl.mfcc; Label sp194spl.lab
+ Utterance prob per frame = -7.369478e+01
+ Processing Data: sp229spk.mfcc; Label sp229spk.lab
+ Utterance prob per frame = -7.644850e+01
+ Processing Data: sp229spl.mfcc; Label sp229spl.lab
+ Utterance prob per frame = -7.300090e+01
+ Processing Data: sp269spk.mfcc; Label sp269spk.lab
+ Utterance prob per frame = -7.778386e+01
+ Processing Data: sp269spl.mfcc; Label sp269spl.lab
+ Utterance prob per frame = -7.539122e+01
+ Processing Data: sp308spk.mfcc; Label sp308spk.lab
+ Utterance prob per frame = -7.446768e+01
+ Processing Data: sp308spl.mfcc; Label sp308spl.lab
+ Utterance prob per frame = -7.541052e+01
+ Processing Data: sp355spk.mfcc; Label sp355spk.lab
+ Utterance prob per frame = -7.513585e+01
+ Processing Data: sp355spl.mfcc; Label sp355spl.lab
+ Utterance prob per frame = -7.479869e+01
+ Processing Data: sp391spk.mfcc; Label sp391spk.lab
+ Utterance prob per frame = -7.375442e+01
+ Processing Data: sp391spl.mfcc; Label sp391spl.lab
+ Utterance prob per frame = -7.242551e+01
+ Processing Data: sp431spk.mfcc; Label sp431spk.lab
+ Utterance prob per frame = -7.444486e+01
+ Processing Data: sp431spl.mfcc; Label sp431spl.lab
+ Utterance prob per frame = -7.048287e+01
+ Processing Data: sp466spk.mfcc; Label sp466spk.lab
+ Utterance prob per frame = -7.829660e+01
+ Processing Data: sp466spl.mfcc; Label sp466spl.lab
+ Utterance prob per frame = -7.181021e+01
+ Processing Data: sp514spk.mfcc; Label sp514spk.lab
+ Utterance prob per frame = -7.815614e+01
+ Processing Data: sp514spl.mfcc; Label sp514spl.lab
+ Utterance prob per frame = -7.194578e+01
+ Processing Data: sp548spk.mfcc; Label sp548spk.lab
+ Utterance prob per frame = -7.785408e+01
+ Processing Data: sp548spl.mfcc; Label sp548spl.lab
+ Utterance prob per frame = -7.199304e+01
+ Processing Data: sp594spk.mfcc; Label sp594spk.lab
+ Utterance prob per frame = -7.594076e+01
+ Processing Data: sp594spl.mfcc; Label sp594spl.lab
+ Utterance prob per frame = -7.321161e+01
+ Processing Data: sp007spk.mfcc; Label sp007spk.lab
+ Utterance prob per frame = -7.371571e+01
+ Processing Data: sp007spl.mfcc; Label sp007spl.lab
+ Utterance prob per frame = -6.817555e+01
+ Processing Data: sp044spk.mfcc; Label sp044spk.lab
+ Utterance prob per frame = -7.096706e+01
+ Processing Data: sp044spl.mfcc; Label sp044spl.lab
+ Utterance prob per frame = -6.955305e+01
+ Processing Data: sp081spk.mfcc; Label sp081spk.lab
+ Utterance prob per frame = -7.091646e+01
+ Processing Data: sp081spl.mfcc; Label sp081spl.lab
+ Utterance prob per frame = -7.234174e+01
+ Processing Data: sp120spk.mfcc; Label sp120spk.lab
+ Utterance prob per frame = -7.362739e+01
+ Processing Data: sp120spl.mfcc; Label sp120spl.lab
+ Utterance prob per frame = -6.831154e+01
+ Processing Data: sp165spk.mfcc; Label sp165spk.lab
+ Utterance prob per frame = -7.738800e+01
+ Processing Data: sp165spl.mfcc; Label sp165spl.lab
+ Utterance prob per frame = -6.911014e+01
+ Processing Data: sp203spk.mfcc; Label sp203spk.lab
+ Utterance prob per frame = -7.286492e+01
+ Processing Data: sp203spl.mfcc; Label sp203spl.lab
+ Utterance prob per frame = -7.416786e+01
+ Processing Data: sp239spk.mfcc; Label sp239spk.lab
+ Utterance prob per frame = -6.965063e+01
+ Processing Data: sp239spl.mfcc; Label sp239spl.lab
+ Utterance prob per frame = -7.112330e+01
+ Processing Data: sp278spk.mfcc; Label sp278spk.lab
+ Utterance prob per frame = -7.450562e+01
+ Processing Data: sp278spl.mfcc; Label sp278spl.lab
+ Utterance prob per frame = -6.949208e+01
+ Processing Data: sp320spk.mfcc; Label sp320spk.lab
+ Utterance prob per frame = -6.996151e+01
+ Processing Data: sp320spl.mfcc; Label sp320spl.lab
+ Utterance prob per frame = -7.286243e+01
+ Processing Data: sp366spk.mfcc; Label sp366spk.lab
+ Utterance prob per frame = -6.971312e+01
+ Processing Data: sp366spl.mfcc; Label sp366spl.lab
+ Utterance prob per frame = -7.523658e+01
+ Processing Data: sp407spk.mfcc; Label sp407spk.lab
+ Utterance prob per frame = -7.431949e+01
+ Processing Data: sp407spl.mfcc; Label sp407spl.lab
+ Utterance prob per frame = -6.959286e+01
+ Processing Data: sp438spk.mfcc; Label sp438spk.lab
+ Utterance prob per frame = -7.739808e+01
+ Processing Data: sp438spl.mfcc; Label sp438spl.lab
+ Utterance prob per frame = -7.158772e+01
+ Processing Data: sp477spk.mfcc; Label sp477spk.lab
+ Utterance prob per frame = -7.088423e+01
+ Processing Data: sp477spl.mfcc; Label sp477spl.lab
+ Utterance prob per frame = -7.066814e+01
+ Processing Data: sp523spk.mfcc; Label sp523spk.lab
+ Utterance prob per frame = -6.963100e+01
+ Processing Data: sp523spl.mfcc; Label sp523spl.lab
+ Utterance prob per frame = -7.088946e+01
+ Processing Data: sp561spk.mfcc; Label sp561spk.lab
+ Utterance prob per frame = -7.007350e+01
+ Processing Data: sp561spl.mfcc; Label sp561spl.lab
+ Utterance prob per frame = -7.199480e+01
+ Processing Data: sp026spk.mfcc; Label sp026spk.lab
+ Utterance prob per frame = -7.786988e+01
+ Processing Data: sp026spl.mfcc; Label sp026spl.lab
+ Utterance prob per frame = -7.042032e+01
+ Processing Data: sp059spk.mfcc; Label sp059spk.lab
+ Utterance prob per frame = -8.052164e+01
+ Processing Data: sp059spl.mfcc; Label sp059spl.lab
+ Utterance prob per frame = -7.225509e+01
+ Processing Data: sp103spk.mfcc; Label sp103spk.lab
+ Utterance prob per frame = -7.779450e+01
+ Processing Data: sp103spl.mfcc; Label sp103spl.lab
+ Utterance prob per frame = -6.855848e+01
+ Processing Data: sp147spk.mfcc; Label sp147spk.lab
+ Utterance prob per frame = -7.255867e+01
+ Processing Data: sp147spl.mfcc; Label sp147spl.lab
+ Utterance prob per frame = -7.097929e+01
+ Processing Data: sp187spk.mfcc; Label sp187spk.lab
+ Utterance prob per frame = -7.388181e+01
+ Processing Data: sp187spl.mfcc; Label sp187spl.lab
+ Utterance prob per frame = -7.143010e+01
+ Processing Data: sp222spk.mfcc; Label sp222spk.lab
+ Utterance prob per frame = -7.651083e+01
+ Processing Data: sp222spl.mfcc; Label sp222spl.lab
+ Utterance prob per frame = -7.107904e+01
+ Processing Data: sp259spk.mfcc; Label sp259spk.lab
+ Utterance prob per frame = -7.548792e+01
+ Processing Data: sp259spl.mfcc; Label sp259spl.lab
+ Utterance prob per frame = -6.997560e+01
+ Processing Data: sp302spk.mfcc; Label sp302spk.lab
+ Utterance prob per frame = -7.643519e+01
+ Processing Data: sp302spl.mfcc; Label sp302spl.lab
+ Utterance prob per frame = -7.191264e+01
+ Processing Data: sp344spk.mfcc; Label sp344spk.lab
+ Utterance prob per frame = -7.675740e+01
+ Processing Data: sp344spl.mfcc; Label sp344spl.lab
+ Utterance prob per frame = -6.976395e+01
+ Processing Data: sp382spk.mfcc; Label sp382spk.lab
+ Utterance prob per frame = -7.123296e+01
+ Processing Data: sp382spl.mfcc; Label sp382spl.lab
+ Utterance prob per frame = -6.906369e+01
+ Processing Data: sp424spk.mfcc; Label sp424spk.lab
+ Utterance prob per frame = -7.734289e+01
+ Processing Data: sp424spl.mfcc; Label sp424spl.lab
+ Utterance prob per frame = -7.098787e+01
+ Processing Data: sp455spk.mfcc; Label sp455spk.lab
+ Utterance prob per frame = -7.648764e+01
+ Processing Data: sp455spl.mfcc; Label sp455spl.lab
+ Utterance prob per frame = -7.174091e+01
+ Processing Data: sp497spk.mfcc; Label sp497spk.lab
+ Utterance prob per frame = -7.651371e+01
+ Processing Data: sp497spl.mfcc; Label sp497spl.lab
+ Utterance prob per frame = -7.433278e+01
+ Processing Data: sp540spk.mfcc; Label sp540spk.lab
+ Utterance prob per frame = -7.394155e+01
+ Processing Data: sp540spl.mfcc; Label sp540spl.lab
+ Utterance prob per frame = -7.053591e+01
+ Processing Data: sp581spk.mfcc; Label sp581spk.lab
+ Utterance prob per frame = -7.480721e+01
+ Processing Data: sp581spl.mfcc; Label sp581spl.lab
+ Utterance prob per frame = -7.175560e+01
+ Processing Data: sp012spk.mfcc; Label sp012spk.lab
+ Utterance prob per frame = -7.210261e+01
+ Processing Data: sp012spl.mfcc; Label sp012spl.lab
+ Utterance prob per frame = -7.056539e+01
+ Processing Data: sp047spk.mfcc; Label sp047spk.lab
+ Utterance prob per frame = -6.908657e+01
+ Processing Data: sp047spl.mfcc; Label sp047spl.lab
+ Utterance prob per frame = -6.914383e+01
+ Processing Data: sp085spk.mfcc; Label sp085spk.lab
+ Utterance prob per frame = -7.184568e+01
+ Processing Data: sp085spl.mfcc; Label sp085spl.lab
+ Utterance prob per frame = -6.977693e+01
+ Processing Data: sp125spk.mfcc; Label sp125spk.lab
+ Utterance prob per frame = -7.365678e+01
+ Processing Data: sp125spl.mfcc; Label sp125spl.lab
+ Utterance prob per frame = -6.590576e+01
+ Processing Data: sp168spk.mfcc; Label sp168spk.lab
+ Utterance prob per frame = -7.862166e+01
+ Processing Data: sp168spl.mfcc; Label sp168spl.lab
+ Utterance prob per frame = -6.963965e+01
+ Processing Data: sp206spk.mfcc; Label sp206spk.lab
+ Utterance prob per frame = -7.561102e+01
+ Processing Data: sp206spl.mfcc; Label sp206spl.lab
+ Utterance prob per frame = -6.644225e+01
+ Processing Data: sp243spk.mfcc; Label sp243spk.lab
+ Utterance prob per frame = -7.624104e+01
+ Processing Data: sp243spl.mfcc; Label sp243spl.lab
+ Utterance prob per frame = -6.869284e+01
+ Processing Data: sp281spk.mfcc; Label sp281spk.lab
+ Utterance prob per frame = -7.078829e+01
+ Processing Data: sp281spl.mfcc; Label sp281spl.lab
+ Utterance prob per frame = -6.893119e+01
+ Processing Data: sp326spk.mfcc; Label sp326spk.lab
+ Utterance prob per frame = -7.199295e+01
+ Processing Data: sp326spl.mfcc; Label sp326spl.lab
+ Utterance prob per frame = -7.002786e+01
+ Processing Data: sp368spk.mfcc; Label sp368spk.lab
+ Utterance prob per frame = -7.486986e+01
+ Processing Data: sp368spl.mfcc; Label sp368spl.lab
+ Utterance prob per frame = -7.240150e+01
+ Processing Data: sp411spk.mfcc; Label sp411spk.lab
+ Utterance prob per frame = -7.647487e+01
+ Processing Data: sp411spl.mfcc; Label sp411spl.lab
+ Utterance prob per frame = -7.018696e+01
+ Processing Data: sp441spk.mfcc; Label sp441spk.lab
+ Utterance prob per frame = -6.925542e+01
+ Processing Data: sp441spl.mfcc; Label sp441spl.lab
+ Utterance prob per frame = -6.901000e+01
+ Processing Data: sp483spk.mfcc; Label sp483spk.lab
+ Utterance prob per frame = -7.201716e+01
+ Processing Data: sp483spl.mfcc; Label sp483spl.lab
+ Utterance prob per frame = -7.018135e+01
+ Processing Data: sp527spk.mfcc; Label sp527spk.lab
+ Utterance prob per frame = -6.626031e+01
+ Processing Data: sp527spl.mfcc; Label sp527spl.lab
+ Utterance prob per frame = -6.748556e+01
+ Processing Data: sp564spk.mfcc; Label sp564spk.lab
+ Utterance prob per frame = -7.468579e+01
+ Processing Data: sp564spl.mfcc; Label sp564spl.lab
+ Utterance prob per frame = -6.933817e+01
+ Processing Data: sp010spk.mfcc; Label sp010spk.lab
+ Utterance prob per frame = -7.335517e+01
+ Processing Data: sp010spl.mfcc; Label sp010spl.lab
+ Utterance prob per frame = -7.094241e+01
+ Processing Data: sp045spk.mfcc; Label sp045spk.lab
+ Utterance prob per frame = -7.078752e+01
+ Processing Data: sp045spl.mfcc; Label sp045spl.lab
+ Utterance prob per frame = -7.013109e+01
+ Processing Data: sp084spk.mfcc; Label sp084spk.lab
+ Utterance prob per frame = -7.201571e+01
+ Processing Data: sp084spl.mfcc; Label sp084spl.lab
+ Utterance prob per frame = -7.304324e+01
+ Processing Data: sp122spk.mfcc; Label sp122spk.lab
+ Utterance prob per frame = -7.329116e+01
+ Processing Data: sp122spl.mfcc; Label sp122spl.lab
+ Utterance prob per frame = -7.069129e+01
+ Processing Data: sp167spk.mfcc; Label sp167spk.lab
+ Utterance prob per frame = -7.147028e+01
+ Processing Data: sp167spl.mfcc; Label sp167spl.lab
+ Utterance prob per frame = -7.123313e+01
+ Processing Data: sp205spk.mfcc; Label sp205spk.lab
+ Utterance prob per frame = -7.310825e+01
+ Processing Data: sp205spl.mfcc; Label sp205spl.lab
+ Utterance prob per frame = -7.136044e+01
+ Processing Data: sp240spk.mfcc; Label sp240spk.lab
+ Utterance prob per frame = -7.127769e+01
+ Processing Data: sp240spl.mfcc; Label sp240spl.lab
+ Utterance prob per frame = -7.213580e+01
+ Processing Data: sp279spk.mfcc; Label sp279spk.lab
+ Utterance prob per frame = -7.184492e+01
+ Processing Data: sp279spl.mfcc; Label sp279spl.lab
+ Utterance prob per frame = -7.266887e+01
+ Processing Data: sp321spk.mfcc; Label sp321spk.lab
+ Utterance prob per frame = -7.893542e+01
+ Processing Data: sp321spl.mfcc; Label sp321spl.lab
+ Utterance prob per frame = -7.252769e+01
+ Processing Data: sp367spk.mfcc; Label sp367spk.lab
+ Utterance prob per frame = -8.002591e+01
+ Processing Data: sp367spl.mfcc; Label sp367spl.lab
+ Utterance prob per frame = -7.166805e+01
+ Processing Data: sp410spk.mfcc; Label sp410spk.lab
+ Utterance prob per frame = -7.515762e+01
+ Processing Data: sp410spl.mfcc; Label sp410spl.lab
+ Utterance prob per frame = -7.479904e+01
+ Processing Data: sp440spk.mfcc; Label sp440spk.lab
+ Utterance prob per frame = -7.712298e+01
+ Processing Data: sp440spl.mfcc; Label sp440spl.lab
+ Utterance prob per frame = -7.501909e+01
+ Processing Data: sp481spk.mfcc; Label sp481spk.lab
+ Utterance prob per frame = -7.189046e+01
+ Processing Data: sp481spl.mfcc; Label sp481spl.lab
+ Utterance prob per frame = -7.220091e+01
+ Processing Data: sp525spk.mfcc; Label sp525spk.lab
+ Utterance prob per frame = -7.393464e+01
+ Processing Data: sp525spl.mfcc; Label sp525spl.lab
+ Utterance prob per frame = -7.334397e+01
+ Processing Data: sp563spk.mfcc; Label sp563spk.lab
+ Utterance prob per frame = -7.334598e+01
+ Processing Data: sp563spl.mfcc; Label sp563spl.lab
+ Utterance prob per frame = -7.828306e+01
+ Processing Data: sp007spk.mfcc; Label sp007spk.lab
+ Utterance prob per frame = -7.444498e+01
+ Processing Data: sp007spl.mfcc; Label sp007spl.lab
+ Utterance prob per frame = -7.191381e+01
+ Processing Data: sp044spk.mfcc; Label sp044spk.lab
+ Utterance prob per frame = -7.387710e+01
+ Processing Data: sp044spl.mfcc; Label sp044spl.lab
+ Utterance prob per frame = -7.027520e+01
+ Processing Data: sp081spk.mfcc; Label sp081spk.lab
+ Utterance prob per frame = -7.356270e+01
+ Processing Data: sp081spl.mfcc; Label sp081spl.lab
+ Utterance prob per frame = -7.602324e+01
+ Processing Data: sp120spk.mfcc; Label sp120spk.lab
+ Utterance prob per frame = -7.917928e+01
+ Processing Data: sp120spl.mfcc; Label sp120spl.lab
+ Utterance prob per frame = -7.208132e+01
+ Processing Data: sp165spk.mfcc; Label sp165spk.lab
+ Utterance prob per frame = -8.213401e+01
+ Processing Data: sp165spl.mfcc; Label sp165spl.lab
+ Utterance prob per frame = -7.194663e+01
+ Processing Data: sp203spk.mfcc; Label sp203spk.lab
+ Utterance prob per frame = -7.594167e+01
+ Processing Data: sp203spl.mfcc; Label sp203spl.lab
+ Utterance prob per frame = -7.752170e+01
+ Processing Data: sp239spk.mfcc; Label sp239spk.lab
+ Utterance prob per frame = -7.154626e+01
+ Processing Data: sp239spl.mfcc; Label sp239spl.lab
+ Utterance prob per frame = -7.213173e+01
+ Processing Data: sp278spk.mfcc; Label sp278spk.lab
+ Utterance prob per frame = -7.917202e+01
+ Processing Data: sp278spl.mfcc; Label sp278spl.lab
+ Utterance prob per frame = -7.269654e+01
+ Processing Data: sp320spk.mfcc; Label sp320spk.lab
+ Utterance prob per frame = -7.490455e+01
+ Processing Data: sp320spl.mfcc; Label sp320spl.lab
+ Utterance prob per frame = -7.530331e+01
+ Processing Data: sp366spk.mfcc; Label sp366spk.lab
+ Utterance prob per frame = -7.138717e+01
+ Processing Data: sp366spl.mfcc; Label sp366spl.lab
+ Utterance prob per frame = -7.584862e+01
+ Processing Data: sp407spk.mfcc; Label sp407spk.lab
+ Utterance prob per frame = -7.558454e+01
+ Processing Data: sp407spl.mfcc; Label sp407spl.lab
+ Utterance prob per frame = -7.437590e+01
+ Processing Data: sp438spk.mfcc; Label sp438spk.lab
+ Utterance prob per frame = -7.667528e+01
+ Processing Data: sp438spl.mfcc; Label sp438spl.lab
+ Utterance prob per frame = -7.583977e+01
+ Processing Data: sp477spk.mfcc; Label sp477spk.lab
+ Utterance prob per frame = -7.073489e+01
+ Processing Data: sp477spl.mfcc; Label sp477spl.lab
+ Utterance prob per frame = -7.108593e+01
+ Processing Data: sp523spk.mfcc; Label sp523spk.lab
+ Utterance prob per frame = -7.599227e+01
+ Processing Data: sp523spl.mfcc; Label sp523spl.lab
+ Utterance prob per frame = -7.313523e+01
+ Processing Data: sp561spk.mfcc; Label sp561spk.lab
+ Utterance prob per frame = -7.862682e+01
+ Processing Data: sp561spl.mfcc; Label sp561spl.lab
+ Utterance prob per frame = -7.413038e+01
+ Processing Data: sp015spk.mfcc; Label sp015spk.lab
+ Utterance prob per frame = -7.634773e+01
+ Processing Data: sp015spl.mfcc; Label sp015spl.lab
+ Utterance prob per frame = -7.152839e+01
+ Processing Data: sp049spk.mfcc; Label sp049spk.lab
+ Utterance prob per frame = -7.397597e+01
+ Processing Data: sp049spl.mfcc; Label sp049spl.lab
+ Utterance prob per frame = -7.553819e+01
+ Processing Data: sp087spk.mfcc; Label sp087spk.lab
+ Utterance prob per frame = -7.821160e+01
+ Processing Data: sp087spl.mfcc; Label sp087spl.lab
+ Utterance prob per frame = -7.426835e+01
+ Processing Data: sp128spk.mfcc; Label sp128spk.lab
+ Utterance prob per frame = -7.565672e+01
+ Processing Data: sp128spl.mfcc; Label sp128spl.lab
+ Utterance prob per frame = -7.612392e+01
+ Processing Data: sp172spk.mfcc; Label sp172spk.lab
+ Utterance prob per frame = -7.801544e+01
+ Processing Data: sp172spl.mfcc; Label sp172spl.lab
+ Utterance prob per frame = -7.511072e+01
+ Processing Data: sp209spk.mfcc; Label sp209spk.lab
+ Utterance prob per frame = -7.590764e+01
+ Processing Data: sp209spl.mfcc; Label sp209spl.lab
+ Utterance prob per frame = -7.167737e+01
+ Processing Data: sp246spk.mfcc; Label sp246spk.lab
+ Utterance prob per frame = -7.152619e+01
+ Processing Data: sp246spl.mfcc; Label sp246spl.lab
+ Utterance prob per frame = -7.910857e+01
+ Processing Data: sp289spk.mfcc; Label sp289spk.lab
+ Utterance prob per frame = -7.502433e+01
+ Processing Data: sp289spl.mfcc; Label sp289spl.lab
+ Utterance prob per frame = -7.595948e+01
+ Processing Data: sp328spk.mfcc; Label sp328spk.lab
+ Utterance prob per frame = -8.284595e+01
+ Processing Data: sp328spl.mfcc; Label sp328spl.lab
+ Utterance prob per frame = -7.780745e+01
+ Processing Data: sp372spk.mfcc; Label sp372spk.lab
+ Utterance prob per frame = -7.120055e+01
+ Processing Data: sp372spl.mfcc; Label sp372spl.lab
+ Utterance prob per frame = -7.242418e+01
+ Processing Data: sp413spk.mfcc; Label sp413spk.lab
+ Utterance prob per frame = -7.522577e+01
+ Processing Data: sp413spl.mfcc; Label sp413spl.lab
+ Utterance prob per frame = -7.016741e+01
+ Processing Data: sp444spk.mfcc; Label sp444spk.lab
+ Utterance prob per frame = -7.243088e+01
+ Processing Data: sp444spl.mfcc; Label sp444spl.lab
+ Utterance prob per frame = -7.675064e+01
+ Processing Data: sp485spk.mfcc; Label sp485spk.lab
+ Utterance prob per frame = -7.474757e+01
+ Processing Data: sp485spl.mfcc; Label sp485spl.lab
+ Utterance prob per frame = -7.482790e+01
+ Processing Data: sp531spk.mfcc; Label sp531spk.lab
+ Utterance prob per frame = -8.022688e+01
+ Processing Data: sp531spl.mfcc; Label sp531spl.lab
+ Utterance prob per frame = -7.663730e+01
+ Processing Data: sp566spk.mfcc; Label sp566spk.lab
+ Utterance prob per frame = -8.062642e+01
+ Processing Data: sp566spl.mfcc; Label sp566spl.lab
+ Utterance prob per frame = -7.708218e+01
+ Processing Data: sp036spk.mfcc; Label sp036spk.lab
+ Utterance prob per frame = -6.778028e+01
+ Processing Data: sp036spl.mfcc; Label sp036spl.lab
+ Utterance prob per frame = -6.984679e+01
+ Processing Data: sp073spk.mfcc; Label sp073spk.lab
+ Utterance prob per frame = -7.929267e+01
+ Processing Data: sp073spl.mfcc; Label sp073spl.lab
+ Utterance prob per frame = -7.109099e+01
+ Processing Data: sp113spk.mfcc; Label sp113spk.lab
+ Utterance prob per frame = -7.696398e+01
+ Processing Data: sp113spl.mfcc; Label sp113spl.lab
+ Utterance prob per frame = -7.295173e+01
+ Processing Data: sp161spk.mfcc; Label sp161spk.lab
+ Utterance prob per frame = -7.699666e+01
+ Processing Data: sp161spl.mfcc; Label sp161spl.lab
+ Utterance prob per frame = -7.325153e+01
+ Processing Data: sp199spk.mfcc; Label sp199spk.lab
+ Utterance prob per frame = -7.996847e+01
+ Processing Data: sp199spl.mfcc; Label sp199spl.lab
+ Utterance prob per frame = -7.575572e+01
+ Processing Data: sp234spk.mfcc; Label sp234spk.lab
+ Utterance prob per frame = -8.477338e+01
+ Processing Data: sp234spl.mfcc; Label sp234spl.lab
+ Utterance prob per frame = -7.205147e+01
+ Processing Data: sp271spk.mfcc; Label sp271spk.lab
+ Utterance prob per frame = -7.709211e+01
+ Processing Data: sp271spl.mfcc; Label sp271spl.lab
+ Utterance prob per frame = -7.559542e+01
+ Processing Data: sp310spk.mfcc; Label sp310spk.lab
+ Utterance prob per frame = -7.698821e+01
+ Processing Data: sp310spl.mfcc; Label sp310spl.lab
+ Utterance prob per frame = -7.109396e+01
+ Processing Data: sp361spk.mfcc; Label sp361spk.lab
+ Utterance prob per frame = -8.155673e+01
+ Processing Data: sp361spl.mfcc; Label sp361spl.lab
+ Utterance prob per frame = -7.490741e+01
+ Processing Data: sp404spk.mfcc; Label sp404spk.lab
+ Utterance prob per frame = -7.855309e+01
+ Processing Data: sp404spl.mfcc; Label sp404spl.lab
+ Utterance prob per frame = -7.345796e+01
+ Processing Data: sp434spk.mfcc; Label sp434spk.lab
+ Utterance prob per frame = -7.736932e+01
+ Processing Data: sp434spl.mfcc; Label sp434spl.lab
+ Utterance prob per frame = -7.309392e+01
+ Processing Data: sp470spk.mfcc; Label sp470spk.lab
+ Utterance prob per frame = -7.062938e+01
+ Processing Data: sp470spl.mfcc; Label sp470spl.lab
+ Utterance prob per frame = -7.278698e+01
+ Processing Data: sp517spk.mfcc; Label sp517spk.lab
+ Utterance prob per frame = -6.876191e+01
+ Processing Data: sp517spl.mfcc; Label sp517spl.lab
+ Utterance prob per frame = -7.186956e+01
+ Processing Data: sp551spk.mfcc; Label sp551spk.lab
+ Utterance prob per frame = -7.432390e+01
+ Processing Data: sp551spl.mfcc; Label sp551spl.lab
+ Utterance prob per frame = -6.880709e+01
+ Processing Data: sp600spk.mfcc; Label sp600spk.lab
+ Utterance prob per frame = -7.499714e+01
+ Processing Data: sp600spl.mfcc; Label sp600spl.lab
+ Utterance prob per frame = -7.122818e+01
+ Processing Data: sp023spk.mfcc; Label sp023spk.lab
+ Utterance prob per frame = -7.607064e+01
+ Processing Data: sp023spl.mfcc; Label sp023spl.lab
+ Utterance prob per frame = -6.799859e+01
+ Processing Data: sp056spk.mfcc; Label sp056spk.lab
+ Utterance prob per frame = -8.615840e+01
+ Processing Data: sp056spl.mfcc; Label sp056spl.lab
+ Utterance prob per frame = -7.217891e+01
+ Processing Data: sp096spk.mfcc; Label sp096spk.lab
+ Utterance prob per frame = -8.483867e+01
+ Processing Data: sp096spl.mfcc; Label sp096spl.lab
+ Utterance prob per frame = -7.125005e+01
+ Processing Data: sp139spk.mfcc; Label sp139spk.lab
+ Utterance prob per frame = -7.410180e+01
+ Processing Data: sp139spl.mfcc; Label sp139spl.lab
+ Utterance prob per frame = -7.159281e+01
+ Processing Data: sp181spk.mfcc; Label sp181spk.lab
+ Utterance prob per frame = -7.132080e+01
+ Processing Data: sp181spl.mfcc; Label sp181spl.lab
+ Utterance prob per frame = -7.056909e+01
+ Processing Data: sp215spk.mfcc; Label sp215spk.lab
+ Utterance prob per frame = -8.016427e+01
+ Processing Data: sp215spl.mfcc; Label sp215spl.lab
+ Utterance prob per frame = -6.984324e+01
+ Processing Data: sp251spk.mfcc; Label sp251spk.lab
+ Utterance prob per frame = -7.967082e+01
+ Processing Data: sp251spl.mfcc; Label sp251spl.lab
+ Utterance prob per frame = -6.898787e+01
+ Processing Data: sp294spk.mfcc; Label sp294spk.lab
+ Utterance prob per frame = -7.911528e+01
+ Processing Data: sp294spl.mfcc; Label sp294spl.lab
+ Utterance prob per frame = -7.313509e+01
+ Processing Data: sp335spk.mfcc; Label sp335spk.lab
+ Utterance prob per frame = -7.898640e+01
+ Processing Data: sp335spl.mfcc; Label sp335spl.lab
+ Utterance prob per frame = -7.281224e+01
+ Processing Data: sp379spk.mfcc; Label sp379spk.lab
+ Utterance prob per frame = -8.712620e+01
+ Processing Data: sp379spl.mfcc; Label sp379spl.lab
+ Utterance prob per frame = -7.116391e+01
+ Processing Data: sp421spk.mfcc; Label sp421spk.lab
+ Utterance prob per frame = -8.284399e+01
+ Processing Data: sp421spl.mfcc; Label sp421spl.lab
+ Utterance prob per frame = -7.042148e+01
+ Processing Data: sp452spk.mfcc; Label sp452spk.lab
+ Utterance prob per frame = -7.862016e+01
+ Processing Data: sp452spl.mfcc; Label sp452spl.lab
+ Utterance prob per frame = -7.136488e+01
+ Processing Data: sp490spk.mfcc; Label sp490spk.lab
+ Utterance prob per frame = -7.790015e+01
+ Processing Data: sp490spl.mfcc; Label sp490spl.lab
+ Utterance prob per frame = -6.979053e+01
+ Processing Data: sp536spk.mfcc; Label sp536spk.lab
+ Utterance prob per frame = -8.288807e+01
+ Processing Data: sp536spl.mfcc; Label sp536spl.lab
+ Utterance prob per frame = -7.056338e+01
+ Processing Data: sp572spk.mfcc; Label sp572spk.lab
+ Utterance prob per frame = -7.877752e+01
+ Processing Data: sp572spl.mfcc; Label sp572spl.lab
+ Utterance prob per frame = -7.382323e+01
+ Processing Data: sp007spk.mfcc; Label sp007spk.lab
+ Utterance prob per frame = -7.479362e+01
+ Processing Data: sp007spl.mfcc; Label sp007spl.lab
+ Utterance prob per frame = -6.923816e+01
+ Processing Data: sp044spk.mfcc; Label sp044spk.lab
+ Utterance prob per frame = -7.229024e+01
+ Processing Data: sp044spl.mfcc; Label sp044spl.lab
+ Utterance prob per frame = -6.743562e+01
+ Processing Data: sp081spk.mfcc; Label sp081spk.lab
+ Utterance prob per frame = -7.534093e+01
+ Processing Data: sp081spl.mfcc; Label sp081spl.lab
+ Utterance prob per frame = -7.067744e+01
+ Processing Data: sp120spk.mfcc; Label sp120spk.lab
+ Utterance prob per frame = -7.507783e+01
+ Processing Data: sp120spl.mfcc; Label sp120spl.lab
+ Utterance prob per frame = -6.908560e+01
+ Processing Data: sp165spk.mfcc; Label sp165spk.lab
+ Utterance prob per frame = -7.789085e+01
+ Processing Data: sp165spl.mfcc; Label sp165spl.lab
+ Utterance prob per frame = -6.876702e+01
+ Processing Data: sp203spk.mfcc; Label sp203spk.lab
+ Utterance prob per frame = -7.146427e+01
+ Processing Data: sp203spl.mfcc; Label sp203spl.lab
+ Utterance prob per frame = -7.007128e+01
+ Processing Data: sp239spk.mfcc; Label sp239spk.lab
+ Utterance prob per frame = -6.865245e+01
+ Processing Data: sp239spl.mfcc; Label sp239spl.lab
+ Utterance prob per frame = -7.259029e+01
+ Processing Data: sp278spk.mfcc; Label sp278spk.lab
+ Utterance prob per frame = -7.399932e+01
+ Processing Data: sp278spl.mfcc; Label sp278spl.lab
+ Utterance prob per frame = -6.996404e+01
+ Processing Data: sp320spk.mfcc; Label sp320spk.lab
+ Utterance prob per frame = -6.802360e+01
+ Processing Data: sp320spl.mfcc; Label sp320spl.lab
+ Utterance prob per frame = -7.140983e+01
+ Processing Data: sp366spk.mfcc; Label sp366spk.lab
+ Utterance prob per frame = -6.975550e+01
+ Processing Data: sp366spl.mfcc; Label sp366spl.lab
+ Utterance prob per frame = -7.417522e+01
+ Processing Data: sp407spk.mfcc; Label sp407spk.lab
+ Utterance prob per frame = -7.654197e+01
+ Processing Data: sp407spl.mfcc; Label sp407spl.lab
+ Utterance prob per frame = -7.766524e+01
+ Processing Data: sp438spk.mfcc; Label sp438spk.lab
+ Utterance prob per frame = -7.862496e+01
+ Processing Data: sp438spl.mfcc; Label sp438spl.lab
+ Utterance prob per frame = -7.156072e+01
+ Processing Data: sp477spk.mfcc; Label sp477spk.lab
+ Utterance prob per frame = -6.984180e+01
+ Processing Data: sp477spl.mfcc; Label sp477spl.lab
+ Utterance prob per frame = -7.191700e+01
+ Processing Data: sp523spk.mfcc; Label sp523spk.lab
+ Utterance prob per frame = -7.315645e+01
+ Processing Data: sp523spl.mfcc; Label sp523spl.lab
+ Utterance prob per frame = -7.112802e+01
+ Processing Data: sp561spk.mfcc; Label sp561spk.lab
+ Utterance prob per frame = -6.926626e+01
+ Processing Data: sp561spl.mfcc; Label sp561spl.lab
+ Utterance prob per frame = -7.058130e+01
+ Processing Data: sp010spk.mfcc; Label sp010spk.lab
+ Utterance prob per frame = -8.081103e+01
+ Processing Data: sp010spl.mfcc; Label sp010spl.lab
+ Utterance prob per frame = -7.552180e+01
+ Processing Data: sp045spk.mfcc; Label sp045spk.lab
+ Utterance prob per frame = -6.773652e+01
+ Processing Data: sp045spl.mfcc; Label sp045spl.lab
+ Utterance prob per frame = -7.021143e+01
+ Processing Data: sp084spk.mfcc; Label sp084spk.lab
+ Utterance prob per frame = -7.359167e+01
+ Processing Data: sp084spl.mfcc; Label sp084spl.lab
+ Utterance prob per frame = -7.171643e+01
+ Processing Data: sp122spk.mfcc; Label sp122spk.lab
+ Utterance prob per frame = -8.143621e+01
+ Processing Data: sp122spl.mfcc; Label sp122spl.lab
+ Utterance prob per frame = -7.413160e+01
+ Processing Data: sp167spk.mfcc; Label sp167spk.lab
+ Utterance prob per frame = -7.582146e+01
+ Processing Data: sp167spl.mfcc; Label sp167spl.lab
+ Utterance prob per frame = -7.293852e+01
+ Processing Data: sp205spk.mfcc; Label sp205spk.lab
+ Utterance prob per frame = -7.255529e+01
+ Processing Data: sp205spl.mfcc; Label sp205spl.lab
+ Utterance prob per frame = -7.644680e+01
+ Processing Data: sp240spk.mfcc; Label sp240spk.lab
+ Utterance prob per frame = -7.274024e+01
+ Processing Data: sp240spl.mfcc; Label sp240spl.lab
+ Utterance prob per frame = -8.051952e+01
+ Processing Data: sp279spk.mfcc; Label sp279spk.lab
+ Utterance prob per frame = -7.828587e+01
+ Processing Data: sp279spl.mfcc; Label sp279spl.lab
+ Utterance prob per frame = -7.480252e+01
+ Processing Data: sp321spk.mfcc; Label sp321spk.lab
+ Utterance prob per frame = -9.108101e+01
+ Processing Data: sp321spl.mfcc; Label sp321spl.lab
+ Utterance prob per frame = -7.970043e+01
+ Processing Data: sp367spk.mfcc; Label sp367spk.lab
+ Utterance prob per frame = -8.141669e+01
+ Processing Data: sp367spl.mfcc; Label sp367spl.lab
+ Utterance prob per frame = -7.482079e+01
+ Processing Data: sp410spk.mfcc; Label sp410spk.lab
+ Utterance prob per frame = -8.064734e+01
+ Processing Data: sp410spl.mfcc; Label sp410spl.lab
+ Utterance prob per frame = -7.566396e+01
+ Processing Data: sp440spk.mfcc; Label sp440spk.lab
+ Utterance prob per frame = -8.325267e+01
+ Processing Data: sp440spl.mfcc; Label sp440spl.lab
+ Utterance prob per frame = -7.649256e+01
+ Processing Data: sp481spk.mfcc; Label sp481spk.lab
+ Utterance prob per frame = -7.455745e+01
+ Processing Data: sp481spl.mfcc; Label sp481spl.lab
+ Utterance prob per frame = -7.753137e+01
+ Processing Data: sp525spk.mfcc; Label sp525spk.lab
+ Utterance prob per frame = -7.527749e+01
+ Processing Data: sp525spl.mfcc; Label sp525spl.lab
+ Utterance prob per frame = -7.268461e+01
+ Processing Data: sp563spk.mfcc; Label sp563spk.lab
+ Utterance prob per frame = -8.229127e+01
+ Processing Data: sp563spl.mfcc; Label sp563spl.lab
+ Utterance prob per frame = -7.457812e+01
+ Processing Data: sp021spk.mfcc; Label sp021spk.lab
+ Utterance prob per frame = -7.823395e+01
+ Processing Data: sp021spl.mfcc; Label sp021spl.lab
+ Utterance prob per frame = -7.231155e+01
+ Processing Data: sp054spk.mfcc; Label sp054spk.lab
+ Utterance prob per frame = -7.557554e+01
+ Processing Data: sp054spl.mfcc; Label sp054spl.lab
+ Utterance prob per frame = -7.101147e+01
+ Processing Data: sp093spk.mfcc; Label sp093spk.lab
+ Utterance prob per frame = -7.727669e+01
+ Processing Data: sp093spl.mfcc; Label sp093spl.lab
+ Utterance prob per frame = -7.521502e+01
+ Processing Data: sp133spk.mfcc; Label sp133spk.lab
+ Utterance prob per frame = -7.735144e+01
+ Processing Data: sp133spl.mfcc; Label sp133spl.lab
+ Utterance prob per frame = -7.304811e+01
+ Processing Data: sp178spk.mfcc; Label sp178spk.lab
+ Utterance prob per frame = -6.731743e+01
+ Processing Data: sp178spl.mfcc; Label sp178spl.lab
+ Utterance prob per frame = -7.461373e+01
+ Processing Data: sp212spk.mfcc; Label sp212spk.lab
+ Utterance prob per frame = -7.934929e+01
+ Processing Data: sp212spl.mfcc; Label sp212spl.lab
+ Utterance prob per frame = -7.259486e+01
+ Processing Data: sp249spk.mfcc; Label sp249spk.lab
+ Utterance prob per frame = -7.968585e+01
+ Processing Data: sp249spl.mfcc; Label sp249spl.lab
+ Utterance prob per frame = -7.169508e+01
+ Processing Data: sp292spk.mfcc; Label sp292spk.lab
+ Utterance prob per frame = -7.624200e+01
+ Processing Data: sp292spl.mfcc; Label sp292spl.lab
+ Utterance prob per frame = -7.534901e+01
+ Processing Data: sp334spk.mfcc; Label sp334spk.lab
+ Utterance prob per frame = -7.417949e+01
+ Processing Data: sp334spl.mfcc; Label sp334spl.lab
+ Utterance prob per frame = -7.787224e+01
+ Processing Data: sp377spk.mfcc; Label sp377spk.lab
+ Utterance prob per frame = -7.322026e+01
+ Processing Data: sp377spl.mfcc; Label sp377spl.lab
+ Utterance prob per frame = -7.669487e+01
+ Processing Data: sp419spk.mfcc; Label sp419spk.lab
+ Utterance prob per frame = -8.218177e+01
+ Processing Data: sp419spl.mfcc; Label sp419spl.lab
+ Utterance prob per frame = -7.100642e+01
+ Processing Data: sp448spk.mfcc; Label sp448spk.lab
+ Utterance prob per frame = -7.212972e+01
+ Processing Data: sp448spl.mfcc; Label sp448spl.lab
+ Utterance prob per frame = -7.245779e+01
+ Processing Data: sp489spk.mfcc; Label sp489spk.lab
+ Utterance prob per frame = -7.492683e+01
+ Processing Data: sp489spl.mfcc; Label sp489spl.lab
+ Utterance prob per frame = -7.163645e+01
+ Processing Data: sp535spk.mfcc; Label sp535spk.lab
+ Utterance prob per frame = -7.711341e+01
+ Processing Data: sp535spl.mfcc; Label sp535spl.lab
+ Utterance prob per frame = -7.548338e+01
+ Processing Data: sp571spk.mfcc; Label sp571spk.lab
+ Utterance prob per frame = -7.505224e+01
+ Processing Data: sp571spl.mfcc; Label sp571spl.lab
+ Utterance prob per frame = -7.381725e+01
+ Processing Data: sp031spk.mfcc; Label sp031spk.lab
+ Utterance prob per frame = -6.902903e+01
+ Processing Data: sp031spl.mfcc; Label sp031spl.lab
+ Utterance prob per frame = -6.892842e+01
+ Processing Data: sp066spk.mfcc; Label sp066spk.lab
+ Utterance prob per frame = -7.682899e+01
+ Processing Data: sp066spl.mfcc; Label sp066spl.lab
+ Utterance prob per frame = -7.139812e+01
+ Processing Data: sp106spk.mfcc; Label sp106spk.lab
+ Utterance prob per frame = -7.461584e+01
+ Processing Data: sp106spl.mfcc; Label sp106spl.lab
+ Utterance prob per frame = -7.426075e+01
+ Processing Data: sp151spk.mfcc; Label sp151spk.lab
+ Utterance prob per frame = -7.200191e+01
+ Processing Data: sp151spl.mfcc; Label sp151spl.lab
+ Utterance prob per frame = -7.368893e+01
+ Processing Data: sp190spk.mfcc; Label sp190spk.lab
+ Utterance prob per frame = -7.816759e+01
+ Processing Data: sp190spl.mfcc; Label sp190spl.lab
+ Utterance prob per frame = -7.168828e+01
+ Processing Data: sp226spk.mfcc; Label sp226spk.lab
+ Utterance prob per frame = -7.326853e+01
+ Processing Data: sp226spl.mfcc; Label sp226spl.lab
+ Utterance prob per frame = -7.796163e+01
+ Processing Data: sp266spk.mfcc; Label sp266spk.lab
+ Utterance prob per frame = -7.020399e+01
+ Processing Data: sp266spl.mfcc; Label sp266spl.lab
+ Utterance prob per frame = -7.264503e+01
+ Processing Data: sp306spk.mfcc; Label sp306spk.lab
+ Utterance prob per frame = -7.655586e+01
+ Processing Data: sp306spl.mfcc; Label sp306spl.lab
+ Utterance prob per frame = -7.007784e+01
+ Processing Data: sp351spk.mfcc; Label sp351spk.lab
+ Utterance prob per frame = -7.318912e+01
+ Processing Data: sp351spl.mfcc; Label sp351spl.lab
+ Utterance prob per frame = -6.649887e+01
+ Processing Data: sp389spk.mfcc; Label sp389spk.lab
+ Utterance prob per frame = -7.341404e+01
+ Processing Data: sp389spl.mfcc; Label sp389spl.lab
+ Utterance prob per frame = -7.268282e+01
+ Processing Data: sp428spk.mfcc; Label sp428spk.lab
+ Utterance prob per frame = -8.157573e+01
+ Processing Data: sp428spl.mfcc; Label sp428spl.lab
+ Utterance prob per frame = -7.299389e+01
+ Processing Data: sp460spk.mfcc; Label sp460spk.lab
+ Utterance prob per frame = -7.500095e+01
+ Processing Data: sp460spl.mfcc; Label sp460spl.lab
+ Utterance prob per frame = -7.355115e+01
+ Processing Data: sp504spk.mfcc; Label sp504spk.lab
+ Utterance prob per frame = -7.766701e+01
+ Processing Data: sp504spl.mfcc; Label sp504spl.lab
+ Utterance prob per frame = -7.782543e+01
+ Processing Data: sp546spk.mfcc; Label sp546spk.lab
+ Utterance prob per frame = -7.456286e+01
+ Processing Data: sp546spl.mfcc; Label sp546spl.lab
+ Utterance prob per frame = -7.297416e+01
+ Processing Data: sp592spk.mfcc; Label sp592spk.lab
+ Utterance prob per frame = -7.531154e+01
+ Processing Data: sp592spl.mfcc; Label sp592spl.lab
+ Utterance prob per frame = -7.107912e+01
+ Processing Data: sp006spk.mfcc; Label sp006spk.lab
+ Utterance prob per frame = -7.987659e+01
+ Processing Data: sp006spl.mfcc; Label sp006spl.lab
+ Utterance prob per frame = -7.347565e+01
+ Processing Data: sp039spk.mfcc; Label sp039spk.lab
+ Utterance prob per frame = -7.669640e+01
+ Processing Data: sp039spl.mfcc; Label sp039spl.lab
+ Utterance prob per frame = -7.324490e+01
+ Processing Data: sp080spk.mfcc; Label sp080spk.lab
+ Utterance prob per frame = -7.478572e+01
+ Processing Data: sp080spl.mfcc; Label sp080spl.lab
+ Utterance prob per frame = -7.402993e+01
+ Processing Data: sp119spk.mfcc; Label sp119spk.lab
+ Utterance prob per frame = -7.597159e+01
+ Processing Data: sp119spl.mfcc; Label sp119spl.lab
+ Utterance prob per frame = -7.170590e+01
+ Processing Data: sp163spk.mfcc; Label sp163spk.lab
+ Utterance prob per frame = -7.748704e+01
+ Processing Data: sp163spl.mfcc; Label sp163spl.lab
+ Utterance prob per frame = -7.442502e+01
+ Processing Data: sp201spk.mfcc; Label sp201spk.lab
+ Utterance prob per frame = -7.824201e+01
+ Processing Data: sp201spl.mfcc; Label sp201spl.lab
+ Utterance prob per frame = -7.384291e+01
+ Processing Data: sp237spk.mfcc; Label sp237spk.lab
+ Utterance prob per frame = -7.488877e+01
+ Processing Data: sp237spl.mfcc; Label sp237spl.lab
+ Utterance prob per frame = -7.648166e+01
+ Processing Data: sp275spk.mfcc; Label sp275spk.lab
+ Utterance prob per frame = -7.633409e+01
+ Processing Data: sp275spl.mfcc; Label sp275spl.lab
+ Utterance prob per frame = -7.416986e+01
+ Processing Data: sp318spk.mfcc; Label sp318spk.lab
+ Utterance prob per frame = -7.504818e+01
+ Processing Data: sp318spl.mfcc; Label sp318spl.lab
+ Utterance prob per frame = -7.531107e+01
+ Processing Data: sp364spk.mfcc; Label sp364spk.lab
+ Utterance prob per frame = -7.395926e+01
+ Processing Data: sp364spl.mfcc; Label sp364spl.lab
+ Utterance prob per frame = -7.657838e+01
+ Processing Data: sp406spk.mfcc; Label sp406spk.lab
+ Utterance prob per frame = -7.716038e+01
+ Processing Data: sp406spl.mfcc; Label sp406spl.lab
+ Utterance prob per frame = -7.386209e+01
+ Processing Data: sp437spk.mfcc; Label sp437spk.lab
+ Utterance prob per frame = -8.086967e+01
+ Processing Data: sp437spl.mfcc; Label sp437spl.lab
+ Utterance prob per frame = -7.303468e+01
+ Processing Data: sp476spk.mfcc; Label sp476spk.lab
+ Utterance prob per frame = -7.488082e+01
+ Processing Data: sp476spl.mfcc; Label sp476spl.lab
+ Utterance prob per frame = -7.824709e+01
+ Processing Data: sp521spk.mfcc; Label sp521spk.lab
+ Utterance prob per frame = -7.636218e+01
+ Processing Data: sp521spl.mfcc; Label sp521spl.lab
+ Utterance prob per frame = -7.503630e+01
+ Processing Data: sp560spk.mfcc; Label sp560spk.lab
+ Utterance prob per frame = -8.059431e+01
+ Processing Data: sp560spl.mfcc; Label sp560spl.lab
+ Utterance prob per frame = -7.399622e+01
+ Processing Data: sp030spk.mfcc; Label sp030spk.lab
+ Utterance prob per frame = -7.820389e+01
+ Processing Data: sp030spl.mfcc; Label sp030spl.lab
+ Utterance prob per frame = -6.908938e+01
+ Processing Data: sp063spk.mfcc; Label sp063spk.lab
+ Utterance prob per frame = -8.213053e+01
+ Processing Data: sp063spl.mfcc; Label sp063spl.lab
+ Utterance prob per frame = -7.106640e+01
+ Processing Data: sp105spk.mfcc; Label sp105spk.lab
+ Utterance prob per frame = -8.146638e+01
+ Processing Data: sp105spl.mfcc; Label sp105spl.lab
+ Utterance prob per frame = -7.387715e+01
+ Processing Data: sp150spk.mfcc; Label sp150spk.lab
+ Utterance prob per frame = -8.217259e+01
+ Processing Data: sp150spl.mfcc; Label sp150spl.lab
+ Utterance prob per frame = -7.002827e+01
+ Processing Data: sp189spk.mfcc; Label sp189spk.lab
+ Utterance prob per frame = -7.538484e+01
+ Processing Data: sp189spl.mfcc; Label sp189spl.lab
+ Utterance prob per frame = -7.283467e+01
+ Processing Data: sp225spk.mfcc; Label sp225spk.lab
+ Utterance prob per frame = -7.751210e+01
+ Processing Data: sp225spl.mfcc; Label sp225spl.lab
+ Utterance prob per frame = -7.051017e+01
+ Processing Data: sp264spk.mfcc; Label sp264spk.lab
+ Utterance prob per frame = -7.289587e+01
+ Processing Data: sp264spl.mfcc; Label sp264spl.lab
+ Utterance prob per frame = -7.949073e+01
+ Processing Data: sp305spk.mfcc; Label sp305spk.lab
+ Utterance prob per frame = -7.180476e+01
+ Processing Data: sp305spl.mfcc; Label sp305spl.lab
+ Utterance prob per frame = -7.070453e+01
+ Processing Data: sp348spk.mfcc; Label sp348spk.lab
+ Utterance prob per frame = -7.620016e+01
+ Processing Data: sp348spl.mfcc; Label sp348spl.lab
+ Utterance prob per frame = -7.652658e+01
+ Processing Data: sp387spk.mfcc; Label sp387spk.lab
+ Utterance prob per frame = -8.342154e+01
+ Processing Data: sp387spl.mfcc; Label sp387spl.lab
+ Utterance prob per frame = -6.992656e+01
+ Processing Data: sp426spk.mfcc; Label sp426spk.lab
+ Utterance prob per frame = -7.872739e+01
+ Processing Data: sp426spl.mfcc; Label sp426spl.lab
+ Utterance prob per frame = -6.961357e+01
+ Processing Data: sp459spk.mfcc; Label sp459spk.lab
+ Utterance prob per frame = -7.110715e+01
+ Processing Data: sp459spl.mfcc; Label sp459spl.lab
+ Utterance prob per frame = -6.813904e+01
+ Processing Data: sp503spk.mfcc; Label sp503spk.lab
+ Utterance prob per frame = -7.977632e+01
+ Processing Data: sp503spl.mfcc; Label sp503spl.lab
+ Utterance prob per frame = -7.033018e+01
+ Processing Data: sp545spk.mfcc; Label sp545spk.lab
+ Utterance prob per frame = -7.617460e+01
+ Processing Data: sp545spl.mfcc; Label sp545spl.lab
+ Utterance prob per frame = -7.019253e+01
+ Processing Data: sp590spk.mfcc; Label sp590spk.lab
+ Utterance prob per frame = -7.415358e+01
+ Processing Data: sp590spl.mfcc; Label sp590spl.lab
+ Utterance prob per frame = -7.333632e+01
+ Processing Data: sp034spk.mfcc; Label sp034spk.lab
+ Utterance prob per frame = -7.928345e+01
+ Processing Data: sp034spl.mfcc; Label sp034spl.lab
+ Utterance prob per frame = -6.766142e+01
+ Processing Data: sp069spk.mfcc; Label sp069spk.lab
+ Utterance prob per frame = -7.675270e+01
+ Processing Data: sp069spl.mfcc; Label sp069spl.lab
+ Utterance prob per frame = -6.953525e+01
+ Processing Data: sp109spk.mfcc; Label sp109spk.lab
+ Utterance prob per frame = -7.631165e+01
+ Processing Data: sp109spl.mfcc; Label sp109spl.lab
+ Utterance prob per frame = -6.905722e+01
+ Processing Data: sp153spk.mfcc; Label sp153spk.lab
+ Utterance prob per frame = -8.234747e+01
+ Processing Data: sp153spl.mfcc; Label sp153spl.lab
+ Utterance prob per frame = -6.981888e+01
+ Processing Data: sp194spk.mfcc; Label sp194spk.lab
+ Utterance prob per frame = -7.664784e+01
+ Processing Data: sp194spl.mfcc; Label sp194spl.lab
+ Utterance prob per frame = -7.354823e+01
+ Processing Data: sp229spk.mfcc; Label sp229spk.lab
+ Utterance prob per frame = -7.361654e+01
+ Processing Data: sp229spl.mfcc; Label sp229spl.lab
+ Utterance prob per frame = -7.161434e+01
+ Processing Data: sp269spk.mfcc; Label sp269spk.lab
+ Utterance prob per frame = -8.062172e+01
+ Processing Data: sp269spl.mfcc; Label sp269spl.lab
+ Utterance prob per frame = -7.012157e+01
+ Processing Data: sp308spk.mfcc; Label sp308spk.lab
+ Utterance prob per frame = -7.112570e+01
+ Processing Data: sp308spl.mfcc; Label sp308spl.lab
+ Utterance prob per frame = -7.814898e+01
+ Processing Data: sp355spk.mfcc; Label sp355spk.lab
+ Utterance prob per frame = -7.901999e+01
+ Processing Data: sp355spl.mfcc; Label sp355spl.lab
+ Utterance prob per frame = -7.763340e+01
+ Processing Data: sp391spk.mfcc; Label sp391spk.lab
+ Utterance prob per frame = -7.363254e+01
+ Processing Data: sp391spl.mfcc; Label sp391spl.lab
+ Utterance prob per frame = -7.314000e+01
+ Processing Data: sp431spk.mfcc; Label sp431spk.lab
+ Utterance prob per frame = -7.637885e+01
+ Processing Data: sp431spl.mfcc; Label sp431spl.lab
+ Utterance prob per frame = -6.826607e+01
+ Processing Data: sp466spk.mfcc; Label sp466spk.lab
+ Utterance prob per frame = -7.814292e+01
+ Processing Data: sp466spl.mfcc; Label sp466spl.lab
+ Utterance prob per frame = -6.985090e+01
+ Processing Data: sp514spk.mfcc; Label sp514spk.lab
+ Utterance prob per frame = -7.167964e+01
+ Processing Data: sp514spl.mfcc; Label sp514spl.lab
+ Utterance prob per frame = -7.191009e+01
+ Processing Data: sp548spk.mfcc; Label sp548spk.lab
+ Utterance prob per frame = -7.526495e+01
+ Processing Data: sp548spl.mfcc; Label sp548spl.lab
+ Utterance prob per frame = -7.054540e+01
+ Processing Data: sp594spk.mfcc; Label sp594spk.lab
+ Utterance prob per frame = -8.190810e+01
+ Processing Data: sp594spl.mfcc; Label sp594spl.lab
+ Utterance prob per frame = -7.001275e+01
+ Processing Data: sp012spk.mfcc; Label sp012spk.lab
+ Utterance prob per frame = -7.148336e+01
+ Processing Data: sp012spl.mfcc; Label sp012spl.lab
+ Utterance prob per frame = -7.139845e+01
+ Processing Data: sp047spk.mfcc; Label sp047spk.lab
+ Utterance prob per frame = -7.224094e+01
+ Processing Data: sp047spl.mfcc; Label sp047spl.lab
+ Utterance prob per frame = -7.412457e+01
+ Processing Data: sp085spk.mfcc; Label sp085spk.lab
+ Utterance prob per frame = -7.715715e+01
+ Processing Data: sp085spl.mfcc; Label sp085spl.lab
+ Utterance prob per frame = -7.231174e+01
+ Processing Data: sp125spk.mfcc; Label sp125spk.lab
+ Utterance prob per frame = -7.642715e+01
+ Processing Data: sp125spl.mfcc; Label sp125spl.lab
+ Utterance prob per frame = -7.109986e+01
+ Processing Data: sp168spk.mfcc; Label sp168spk.lab
+ Utterance prob per frame = -7.950109e+01
+ Processing Data: sp168spl.mfcc; Label sp168spl.lab
+ Utterance prob per frame = -7.449564e+01
+ Processing Data: sp206spk.mfcc; Label sp206spk.lab
+ Utterance prob per frame = -7.772449e+01
+ Processing Data: sp206spl.mfcc; Label sp206spl.lab
+ Utterance prob per frame = -7.110560e+01
+ Processing Data: sp243spk.mfcc; Label sp243spk.lab
+ Utterance prob per frame = -7.451323e+01
+ Processing Data: sp243spl.mfcc; Label sp243spl.lab
+ Utterance prob per frame = -7.297823e+01
+ Processing Data: sp281spk.mfcc; Label sp281spk.lab
+ Utterance prob per frame = -7.092021e+01
+ Processing Data: sp281spl.mfcc; Label sp281spl.lab
+ Utterance prob per frame = -7.359023e+01
+ Processing Data: sp326spk.mfcc; Label sp326spk.lab
+ Utterance prob per frame = -8.321084e+01
+ Processing Data: sp326spl.mfcc; Label sp326spl.lab
+ Utterance prob per frame = -7.112371e+01
+ Processing Data: sp368spk.mfcc; Label sp368spk.lab
+ Utterance prob per frame = -7.797423e+01
+ Processing Data: sp368spl.mfcc; Label sp368spl.lab
+ Utterance prob per frame = -7.409979e+01
+ Processing Data: sp411spk.mfcc; Label sp411spk.lab
+ Utterance prob per frame = -7.653085e+01
+ Processing Data: sp411spl.mfcc; Label sp411spl.lab
+ Utterance prob per frame = -7.361524e+01
+ Processing Data: sp441spk.mfcc; Label sp441spk.lab
+ Utterance prob per frame = -7.352515e+01
+ Processing Data: sp441spl.mfcc; Label sp441spl.lab
+ Utterance prob per frame = -7.353753e+01
+ Processing Data: sp483spk.mfcc; Label sp483spk.lab
+ Utterance prob per frame = -7.140748e+01
+ Processing Data: sp483spl.mfcc; Label sp483spl.lab
+ Utterance prob per frame = -6.957138e+01
+ Processing Data: sp527spk.mfcc; Label sp527spk.lab
+ Utterance prob per frame = -7.251990e+01
+ Processing Data: sp527spl.mfcc; Label sp527spl.lab
+ Utterance prob per frame = -7.241181e+01
+ Processing Data: sp564spk.mfcc; Label sp564spk.lab
+ Utterance prob per frame = -7.843347e+01
+ Processing Data: sp564spl.mfcc; Label sp564spl.lab
+ Utterance prob per frame = -7.078336e+01
+ Processing Data: sp002spk.mfcc; Label sp002spk.lab
+ Utterance prob per frame = -8.109657e+01
+ Processing Data: sp002spl.mfcc; Label sp002spl.lab
+ Utterance prob per frame = -7.124672e+01
+ Processing Data: sp038spk.mfcc; Label sp038spk.lab
+ Utterance prob per frame = -8.161483e+01
+ Processing Data: sp038spl.mfcc; Label sp038spl.lab
+ Utterance prob per frame = -6.914308e+01
+ Processing Data: sp079spk.mfcc; Label sp079spk.lab
+ Utterance prob per frame = -8.398464e+01
+ Processing Data: sp079spl.mfcc; Label sp079spl.lab
+ Utterance prob per frame = -7.000064e+01
+ Processing Data: sp124spk.mfcc; Label sp124spk.lab
+ Utterance prob per frame = -7.894683e+01
+ Processing Data: sp124spl.mfcc; Label sp124spl.lab
+ Utterance prob per frame = -7.170253e+01
+ Processing Data: sp173spk.mfcc; Label sp173spk.lab
+ Utterance prob per frame = -7.539967e+01
+ Processing Data: sp173spl.mfcc; Label sp173spl.lab
+ Utterance prob per frame = -6.985887e+01
+ Processing Data: sp263spk.mfcc; Label sp263spk.lab
+ Utterance prob per frame = -7.329918e+01
+ Processing Data: sp263spl.mfcc; Label sp263spl.lab
+ Utterance prob per frame = -7.341203e+01
+ Processing Data: sp295spk.mfcc; Label sp295spk.lab
+ Utterance prob per frame = -7.711360e+01
+ Processing Data: sp295spl.mfcc; Label sp295spl.lab
+ Utterance prob per frame = -7.212270e+01
+ Processing Data: sp329spk.mfcc; Label sp329spk.lab
+ Utterance prob per frame = -8.255387e+01
+ Processing Data: sp329spl.mfcc; Label sp329spl.lab
+ Utterance prob per frame = -7.372674e+01
+ Processing Data: sp370spk.mfcc; Label sp370spk.lab
+ Utterance prob per frame = -7.459000e+01
+ Processing Data: sp370spl.mfcc; Label sp370spl.lab
+ Utterance prob per frame = -6.906853e+01
+ Processing Data: sp396spk.mfcc; Label sp396spk.lab
+ Utterance prob per frame = -7.474085e+01
+ Processing Data: sp396spl.mfcc; Label sp396spl.lab
+ Utterance prob per frame = -7.186092e+01
+ Processing Data: sp461spk.mfcc; Label sp461spk.lab
+ Utterance prob per frame = -6.931732e+01
+ Processing Data: sp461spl.mfcc; Label sp461spl.lab
+ Utterance prob per frame = -7.033859e+01
+ Processing Data: sp501spk.mfcc; Label sp501spk.lab
+ Utterance prob per frame = -7.650158e+01
+ Processing Data: sp501spl.mfcc; Label sp501spl.lab
+ Utterance prob per frame = -7.278157e+01
+ Processing Data: sp522spk.mfcc; Label sp522spk.lab
+ Utterance prob per frame = -7.379986e+01
+ Processing Data: sp522spl.mfcc; Label sp522spl.lab
+ Utterance prob per frame = -7.286693e+01
+ Processing Data: sp556spk.mfcc; Label sp556spk.lab
+ Utterance prob per frame = -7.147603e+01
+ Processing Data: sp556spl.mfcc; Label sp556spl.lab
+ Utterance prob per frame = -7.300619e+01
+ Processing Data: sp029spk.mfcc; Label sp029spk.lab
+ Utterance prob per frame = -7.849662e+01
+ Processing Data: sp029spl.mfcc; Label sp029spl.lab
+ Utterance prob per frame = -6.905452e+01
+ Processing Data: sp077spk.mfcc; Label sp077spk.lab
+ Utterance prob per frame = -7.837590e+01
+ Processing Data: sp077spl.mfcc; Label sp077spl.lab
+ Utterance prob per frame = -7.104142e+01
+ Processing Data: sp123spk.mfcc; Label sp123spk.lab
+ Utterance prob per frame = -8.383864e+01
+ Processing Data: sp123spl.mfcc; Label sp123spl.lab
+ Utterance prob per frame = -7.152110e+01
+ Processing Data: sp171spk.mfcc; Label sp171spk.lab
+ Utterance prob per frame = -8.279846e+01
+ Processing Data: sp171spl.mfcc; Label sp171spl.lab
+ Utterance prob per frame = -7.208292e+01
+ Processing Data: sp207spk.mfcc; Label sp207spk.lab
+ Utterance prob per frame = -7.858304e+01
+ Processing Data: sp207spl.mfcc; Label sp207spl.lab
+ Utterance prob per frame = -7.235750e+01
+ Processing Data: sp261spk.mfcc; Label sp261spk.lab
+ Utterance prob per frame = -7.966419e+01
+ Processing Data: sp261spl.mfcc; Label sp261spl.lab
+ Utterance prob per frame = -7.145111e+01
+ Processing Data: sp293spk.mfcc; Label sp293spk.lab
+ Utterance prob per frame = -7.852157e+01
+ Processing Data: sp293spl.mfcc; Label sp293spl.lab
+ Utterance prob per frame = -7.560242e+01
+ Processing Data: sp323spk.mfcc; Label sp323spk.lab
+ Utterance prob per frame = -7.971585e+01
+ Processing Data: sp323spl.mfcc; Label sp323spl.lab
+ Utterance prob per frame = -7.449029e+01
+ Processing Data: sp365spk.mfcc; Label sp365spk.lab
+ Utterance prob per frame = -7.749452e+01
+ Processing Data: sp365spl.mfcc; Label sp365spl.lab
+ Utterance prob per frame = -7.112102e+01
+ Processing Data: sp395spk.mfcc; Label sp395spk.lab
+ Utterance prob per frame = -7.565578e+01
+ Processing Data: sp395spl.mfcc; Label sp395spl.lab
+ Utterance prob per frame = -7.512125e+01
+ Processing Data: sp457spk.mfcc; Label sp457spk.lab
+ Utterance prob per frame = -7.747302e+01
+ Processing Data: sp457spl.mfcc; Label sp457spl.lab
+ Utterance prob per frame = -7.300928e+01
+ Processing Data: sp496spk.mfcc; Label sp496spk.lab
+ Utterance prob per frame = -7.437904e+01
+ Processing Data: sp496spl.mfcc; Label sp496spl.lab
+ Utterance prob per frame = -7.360035e+01
+ Processing Data: sp520spk.mfcc; Label sp520spk.lab
+ Utterance prob per frame = -7.406276e+01
+ Processing Data: sp520spl.mfcc; Label sp520spl.lab
+ Utterance prob per frame = -7.774829e+01
+ Processing Data: sp553spk.mfcc; Label sp553spk.lab
+ Utterance prob per frame = -7.940819e+01
+ Processing Data: sp553spl.mfcc; Label sp553spl.lab
+ Utterance prob per frame = -7.365663e+01
+ Processing Data: sp597spk.mfcc; Label sp597spk.lab
+ Utterance prob per frame = -8.325028e+01
+ Processing Data: sp597spl.mfcc; Label sp597spl.lab
+ Utterance prob per frame = -7.557443e+01
+ Processing Data: sp011spk.mfcc; Label sp011spk.lab
+ Utterance prob per frame = -7.752374e+01
+ Processing Data: sp011spl.mfcc; Label sp011spl.lab
+ Utterance prob per frame = -6.872569e+01
+ Processing Data: sp060spk.mfcc; Label sp060spk.lab
+ Utterance prob per frame = -7.434354e+01
+ Processing Data: sp060spl.mfcc; Label sp060spl.lab
+ Utterance prob per frame = -6.795521e+01
+ Processing Data: sp097spk.mfcc; Label sp097spk.lab
+ Utterance prob per frame = -7.995717e+01
+ Processing Data: sp097spl.mfcc; Label sp097spl.lab
+ Utterance prob per frame = -6.857221e+01
+ Processing Data: sp135spk.mfcc; Label sp135spk.lab
+ Utterance prob per frame = -7.496254e+01
+ Processing Data: sp135spl.mfcc; Label sp135spl.lab
+ Utterance prob per frame = -7.296275e+01
+ Processing Data: sp191spk.mfcc; Label sp191spk.lab
+ Utterance prob per frame = -7.482901e+01
+ Processing Data: sp191spl.mfcc; Label sp191spl.lab
+ Utterance prob per frame = -7.072353e+01
+ Processing Data: sp227spk.mfcc; Label sp227spk.lab
+ Utterance prob per frame = -7.068895e+01
+ Processing Data: sp227spl.mfcc; Label sp227spl.lab
+ Utterance prob per frame = -7.411330e+01
+ Processing Data: sp280spk.mfcc; Label sp280spk.lab
+ Utterance prob per frame = -8.072192e+01
+ Processing Data: sp280spl.mfcc; Label sp280spl.lab
+ Utterance prob per frame = -6.945430e+01
+ Processing Data: sp311spk.mfcc; Label sp311spk.lab
+ Utterance prob per frame = -7.549018e+01
+ Processing Data: sp311spl.mfcc; Label sp311spl.lab
+ Utterance prob per frame = -6.950775e+01
+ Processing Data: sp347spk.mfcc; Label sp347spk.lab
+ Utterance prob per frame = -7.154564e+01
+ Processing Data: sp347spl.mfcc; Label sp347spl.lab
+ Utterance prob per frame = -6.888407e+01
+ Processing Data: sp383spk.mfcc; Label sp383spk.lab
+ Utterance prob per frame = -8.196990e+01
+ Processing Data: sp383spl.mfcc; Label sp383spl.lab
+ Utterance prob per frame = -7.173954e+01
+ Processing Data: sp415spk.mfcc; Label sp415spk.lab
+ Utterance prob per frame = -7.951219e+01
+ Processing Data: sp415spl.mfcc; Label sp415spl.lab
+ Utterance prob per frame = -6.903509e+01
+ Processing Data: sp480spk.mfcc; Label sp480spk.lab
+ Utterance prob per frame = -7.378107e+01
+ Processing Data: sp480spl.mfcc; Label sp480spl.lab
+ Utterance prob per frame = -7.106604e+01
+ Processing Data: sp507spk.mfcc; Label sp507spk.lab
+ Utterance prob per frame = -7.483220e+01
+ Processing Data: sp507spl.mfcc; Label sp507spl.lab
+ Utterance prob per frame = -7.022656e+01
+ Processing Data: sp534spk.mfcc; Label sp534spk.lab
+ Utterance prob per frame = -7.927518e+01
+ Processing Data: sp534spl.mfcc; Label sp534spl.lab
+ Utterance prob per frame = -7.101639e+01
+ Processing Data: sp578spk.mfcc; Label sp578spk.lab
+ Utterance prob per frame = -6.777330e+01
+ Processing Data: sp578spl.mfcc; Label sp578spl.lab
+ Utterance prob per frame = -7.341826e+01
+ Processing Data: sp011spk.mfcc; Label sp011spk.lab
+ Utterance prob per frame = -7.635871e+01
+ Processing Data: sp011spl.mfcc; Label sp011spl.lab
+ Utterance prob per frame = -7.130942e+01
+ Processing Data: sp060spk.mfcc; Label sp060spk.lab
+ Utterance prob per frame = -7.419929e+01
+ Processing Data: sp060spl.mfcc; Label sp060spl.lab
+ Utterance prob per frame = -6.607954e+01
+ Processing Data: sp097spk.mfcc; Label sp097spk.lab
+ Utterance prob per frame = -7.826591e+01
+ Processing Data: sp097spl.mfcc; Label sp097spl.lab
+ Utterance prob per frame = -7.026768e+01
+ Processing Data: sp135spk.mfcc; Label sp135spk.lab
+ Utterance prob per frame = -6.900178e+01
+ Processing Data: sp135spl.mfcc; Label sp135spl.lab
+ Utterance prob per frame = -6.925663e+01
+ Processing Data: sp191spk.mfcc; Label sp191spk.lab
+ Utterance prob per frame = -7.482314e+01
+ Processing Data: sp191spl.mfcc; Label sp191spl.lab
+ Utterance prob per frame = -7.008500e+01
+ Processing Data: sp227spk.mfcc; Label sp227spk.lab
+ Utterance prob per frame = -6.793535e+01
+ Processing Data: sp227spl.mfcc; Label sp227spl.lab
+ Utterance prob per frame = -7.039016e+01
+ Processing Data: sp280spk.mfcc; Label sp280spk.lab
+ Utterance prob per frame = -7.622497e+01
+ Processing Data: sp280spl.mfcc; Label sp280spl.lab
+ Utterance prob per frame = -6.899536e+01
+ Processing Data: sp311spk.mfcc; Label sp311spk.lab
+ Utterance prob per frame = -7.239579e+01
+ Processing Data: sp311spl.mfcc; Label sp311spl.lab
+ Utterance prob per frame = -7.039136e+01
+ Processing Data: sp347spk.mfcc; Label sp347spk.lab
+ Utterance prob per frame = -7.441361e+01
+ Processing Data: sp347spl.mfcc; Label sp347spl.lab
+ Utterance prob per frame = -6.802214e+01
+ Processing Data: sp383spk.mfcc; Label sp383spk.lab
+ Utterance prob per frame = -7.341120e+01
+ Processing Data: sp383spl.mfcc; Label sp383spl.lab
+ Utterance prob per frame = -6.962141e+01
+ Processing Data: sp415spk.mfcc; Label sp415spk.lab
+ Utterance prob per frame = -7.363136e+01
+ Processing Data: sp415spl.mfcc; Label sp415spl.lab
+ Utterance prob per frame = -7.198419e+01
+ Processing Data: sp480spk.mfcc; Label sp480spk.lab
+ Utterance prob per frame = -7.246776e+01
+ Processing Data: sp480spl.mfcc; Label sp480spl.lab
+ Utterance prob per frame = -6.818035e+01
+ Processing Data: sp507spk.mfcc; Label sp507spk.lab
+ Utterance prob per frame = -7.557014e+01
+ Processing Data: sp507spl.mfcc; Label sp507spl.lab
+ Utterance prob per frame = -6.988152e+01
+ Processing Data: sp534spk.mfcc; Label sp534spk.lab
+ Utterance prob per frame = -7.383749e+01
+ Processing Data: sp534spl.mfcc; Label sp534spl.lab
+ Utterance prob per frame = -7.215059e+01
+ Processing Data: sp578spk.mfcc; Label sp578spk.lab
+ Utterance prob per frame = -7.119622e+01
+ Processing Data: sp578spl.mfcc; Label sp578spl.lab
+ Utterance prob per frame = -7.276914e+01
+ Processing Data: sp004spk.mfcc; Label sp004spk.lab
+ Utterance prob per frame = -8.011288e+01
+ Processing Data: sp004spl.mfcc; Label sp004spl.lab
+ Utterance prob per frame = -7.589788e+01
+ Processing Data: sp046spk.mfcc; Label sp046spk.lab
+ Utterance prob per frame = -7.526276e+01
+ Processing Data: sp046spl.mfcc; Label sp046spl.lab
+ Utterance prob per frame = -7.811416e+01
+ Processing Data: sp089spk.mfcc; Label sp089spk.lab
+ Utterance prob per frame = -7.728209e+01
+ Processing Data: sp089spl.mfcc; Label sp089spl.lab
+ Utterance prob per frame = -7.626049e+01
+ Processing Data: sp131spk.mfcc; Label sp131spk.lab
+ Utterance prob per frame = -8.031783e+01
+ Processing Data: sp131spl.mfcc; Label sp131spl.lab
+ Utterance prob per frame = -7.846706e+01
+ Processing Data: sp177spk.mfcc; Label sp177spk.lab
+ Utterance prob per frame = -8.053136e+01
+ Processing Data: sp177spl.mfcc; Label sp177spl.lab
+ Utterance prob per frame = -8.115837e+01
+ Processing Data: sp218spk.mfcc; Label sp218spk.lab
+ Utterance prob per frame = -7.606214e+01
+ Processing Data: sp218spl.mfcc; Label sp218spl.lab
+ Utterance prob per frame = -7.689444e+01
+ Processing Data: sp273spk.mfcc; Label sp273spk.lab
+ Utterance prob per frame = -7.345427e+01
+ Processing Data: sp273spl.mfcc; Label sp273spl.lab
+ Utterance prob per frame = -7.545630e+01
+ Processing Data: sp300spk.mfcc; Label sp300spk.lab
+ Utterance prob per frame = -7.697697e+01
+ Processing Data: sp300spl.mfcc; Label sp300spl.lab
+ Utterance prob per frame = -7.527149e+01
+ Processing Data: sp337spk.mfcc; Label sp337spk.lab
+ Utterance prob per frame = -8.259758e+01
+ Processing Data: sp337spl.mfcc; Label sp337spl.lab
+ Utterance prob per frame = -8.010183e+01
+ Processing Data: sp376spk.mfcc; Label sp376spk.lab
+ Utterance prob per frame = -7.696730e+01
+ Processing Data: sp376spl.mfcc; Label sp376spl.lab
+ Utterance prob per frame = -7.944508e+01
+ Processing Data: sp400spk.mfcc; Label sp400spk.lab
+ Utterance prob per frame = -7.829520e+01
+ Processing Data: sp400spl.mfcc; Label sp400spl.lab
+ Utterance prob per frame = -7.665654e+01
+ Processing Data: sp464spk.mfcc; Label sp464spk.lab
+ Utterance prob per frame = -7.247361e+01
+ Processing Data: sp464spl.mfcc; Label sp464spl.lab
+ Utterance prob per frame = -7.869847e+01
+ Processing Data: sp505spk.mfcc; Label sp505spk.lab
+ Utterance prob per frame = -7.660433e+01
+ Processing Data: sp505spl.mfcc; Label sp505spl.lab
+ Utterance prob per frame = -7.465088e+01
+ Processing Data: sp526spk.mfcc; Label sp526spk.lab
+ Utterance prob per frame = -7.475861e+01
+ Processing Data: sp526spl.mfcc; Label sp526spl.lab
+ Utterance prob per frame = -7.252081e+01
+ Processing Data: sp574spk.mfcc; Label sp574spk.lab
+ Utterance prob per frame = -7.730132e+01
+ Processing Data: sp574spl.mfcc; Label sp574spl.lab
+ Utterance prob per frame = -7.815619e+01
+ Processing Data: sp022spk.mfcc; Label sp022spk.lab
+ Utterance prob per frame = -6.584360e+01
+ Processing Data: sp022spl.mfcc; Label sp022spl.lab
+ Utterance prob per frame = -6.869843e+01
+ Processing Data: sp068spk.mfcc; Label sp068spk.lab
+ Utterance prob per frame = -7.161686e+01
+ Processing Data: sp068spl.mfcc; Label sp068spl.lab
+ Utterance prob per frame = -6.863313e+01
+ Processing Data: sp116spk.mfcc; Label sp116spk.lab
+ Utterance prob per frame = -7.004845e+01
+ Processing Data: sp116spl.mfcc; Label sp116spl.lab
+ Utterance prob per frame = -6.629662e+01
+ Processing Data: sp164spk.mfcc; Label sp164spk.lab
+ Utterance prob per frame = -6.949279e+01
+ Processing Data: sp164spl.mfcc; Label sp164spl.lab
+ Utterance prob per frame = -6.912399e+01
+ Processing Data: sp197spk.mfcc; Label sp197spk.lab
+ Utterance prob per frame = -8.140048e+01
+ Processing Data: sp197spl.mfcc; Label sp197spl.lab
+ Utterance prob per frame = -6.964933e+01
+ Processing Data: sp250spk.mfcc; Label sp250spk.lab
+ Utterance prob per frame = -7.022940e+01
+ Processing Data: sp250spl.mfcc; Label sp250spl.lab
+ Utterance prob per frame = -7.253356e+01
+ Processing Data: sp285spk.mfcc; Label sp285spk.lab
+ Utterance prob per frame = -7.511677e+01
+ Processing Data: sp285spl.mfcc; Label sp285spl.lab
+ Utterance prob per frame = -6.999614e+01
+ Processing Data: sp314spk.mfcc; Label sp314spk.lab
+ Utterance prob per frame = -7.138268e+01
+ Processing Data: sp314spl.mfcc; Label sp314spl.lab
+ Utterance prob per frame = -7.085980e+01
+ Processing Data: sp359spk.mfcc; Label sp359spk.lab
+ Utterance prob per frame = -7.083655e+01
+ Processing Data: sp359spl.mfcc; Label sp359spl.lab
+ Utterance prob per frame = -7.428404e+01
+ Processing Data: sp393spk.mfcc; Label sp393spk.lab
+ Utterance prob per frame = -7.207228e+01
+ Processing Data: sp393spl.mfcc; Label sp393spl.lab
+ Utterance prob per frame = -7.033691e+01
+ Processing Data: sp447spk.mfcc; Label sp447spk.lab
+ Utterance prob per frame = -6.861580e+01
+ Processing Data: sp447spl.mfcc; Label sp447spl.lab
+ Utterance prob per frame = -6.862709e+01
+ Processing Data: sp488spk.mfcc; Label sp488spk.lab
+ Utterance prob per frame = -7.187351e+01
+ Processing Data: sp488spl.mfcc; Label sp488spl.lab
+ Utterance prob per frame = -6.966744e+01
+ Processing Data: sp512spk.mfcc; Label sp512spk.lab
+ Utterance prob per frame = -6.852186e+01
+ Processing Data: sp512spl.mfcc; Label sp512spl.lab
+ Utterance prob per frame = -7.163519e+01
+ Processing Data: sp544spk.mfcc; Label sp544spk.lab
+ Utterance prob per frame = -7.126590e+01
+ Processing Data: sp544spl.mfcc; Label sp544spl.lab
+ Utterance prob per frame = -6.998915e+01
+ Processing Data: sp585spk.mfcc; Label sp585spk.lab
+ Utterance prob per frame = -7.758910e+01
+ Processing Data: sp585spl.mfcc; Label sp585spl.lab
+ Utterance prob per frame = -7.047904e+01
+ Processing Data: sp005spk.mfcc; Label sp005spk.lab
+ Utterance prob per frame = -7.428243e+01
+ Processing Data: sp005spl.mfcc; Label sp005spl.lab
+ Utterance prob per frame = -7.091838e+01
+ Processing Data: sp055spk.mfcc; Label sp055spk.lab
+ Utterance prob per frame = -7.323299e+01
+ Processing Data: sp055spl.mfcc; Label sp055spl.lab
+ Utterance prob per frame = -7.803932e+01
+ Processing Data: sp094spk.mfcc; Label sp094spk.lab
+ Utterance prob per frame = -7.703019e+01
+ Processing Data: sp094spl.mfcc; Label sp094spl.lab
+ Utterance prob per frame = -6.814230e+01
+ Processing Data: sp134spk.mfcc; Label sp134spk.lab
+ Utterance prob per frame = -7.144625e+01
+ Processing Data: sp134spl.mfcc; Label sp134spl.lab
+ Utterance prob per frame = -6.683631e+01
+ Processing Data: sp184spk.mfcc; Label sp184spk.lab
+ Utterance prob per frame = -7.705356e+01
+ Processing Data: sp184spl.mfcc; Label sp184spl.lab
+ Utterance prob per frame = -6.982922e+01
+ Processing Data: sp219spk.mfcc; Label sp219spk.lab
+ Utterance prob per frame = -7.885161e+01
+ Processing Data: sp219spl.mfcc; Label sp219spl.lab
+ Utterance prob per frame = -7.027999e+01
+ Processing Data: sp276spk.mfcc; Label sp276spk.lab
+ Utterance prob per frame = -8.141966e+01
+ Processing Data: sp276spl.mfcc; Label sp276spl.lab
+ Utterance prob per frame = -7.157995e+01
+ Processing Data: sp304spk.mfcc; Label sp304spk.lab
+ Utterance prob per frame = -7.392716e+01
+ Processing Data: sp304spl.mfcc; Label sp304spl.lab
+ Utterance prob per frame = -7.161117e+01
+ Processing Data: sp340spk.mfcc; Label sp340spk.lab
+ Utterance prob per frame = -7.842114e+01
+ Processing Data: sp340spl.mfcc; Label sp340spl.lab
+ Utterance prob per frame = -7.399724e+01
+ Processing Data: sp378spk.mfcc; Label sp378spk.lab
+ Utterance prob per frame = -7.686953e+01
+ Processing Data: sp378spl.mfcc; Label sp378spl.lab
+ Utterance prob per frame = -7.361400e+01
+ Processing Data: sp403spk.mfcc; Label sp403spk.lab
+ Utterance prob per frame = -7.963201e+01
+ Processing Data: sp403spl.mfcc; Label sp403spl.lab
+ Utterance prob per frame = -7.074493e+01
+ Processing Data: sp475spk.mfcc; Label sp475spk.lab
+ Utterance prob per frame = -7.698611e+01
+ Processing Data: sp475spl.mfcc; Label sp475spl.lab
+ Utterance prob per frame = -7.527554e+01
+ Processing Data: sp506spk.mfcc; Label sp506spk.lab
+ Utterance prob per frame = -7.590784e+01
+ Processing Data: sp506spl.mfcc; Label sp506spl.lab
+ Utterance prob per frame = -6.966248e+01
+ Processing Data: sp530spk.mfcc; Label sp530spk.lab
+ Utterance prob per frame = -7.808844e+01
+ Processing Data: sp530spl.mfcc; Label sp530spl.lab
+ Utterance prob per frame = -7.301373e+01
+ Processing Data: sp576spk.mfcc; Label sp576spk.lab
+ Utterance prob per frame = -8.524379e+01
+ Processing Data: sp576spl.mfcc; Label sp576spl.lab
+ Utterance prob per frame = -7.774771e+01
+ Processing Data: sp022spk.mfcc; Label sp022spk.lab
+ Utterance prob per frame = -7.427622e+01
+ Processing Data: sp022spl.mfcc; Label sp022spl.lab
+ Utterance prob per frame = -7.068912e+01
+ Processing Data: sp068spk.mfcc; Label sp068spk.lab
+ Utterance prob per frame = -7.232895e+01
+ Processing Data: sp068spl.mfcc; Label sp068spl.lab
+ Utterance prob per frame = -6.926191e+01
+ Processing Data: sp116spk.mfcc; Label sp116spk.lab
+ Utterance prob per frame = -7.121423e+01
+ Processing Data: sp116spl.mfcc; Label sp116spl.lab
+ Utterance prob per frame = -6.979156e+01
+ Processing Data: sp164spk.mfcc; Label sp164spk.lab
+ Utterance prob per frame = -7.666389e+01
+ Processing Data: sp164spl.mfcc; Label sp164spl.lab
+ Utterance prob per frame = -7.202030e+01
+ Processing Data: sp197spk.mfcc; Label sp197spk.lab
+ Utterance prob per frame = -7.956057e+01
+ Processing Data: sp197spl.mfcc; Label sp197spl.lab
+ Utterance prob per frame = -7.407412e+01
+ Processing Data: sp250spk.mfcc; Label sp250spk.lab
+ Utterance prob per frame = -7.216136e+01
+ Processing Data: sp250spl.mfcc; Label sp250spl.lab
+ Utterance prob per frame = -7.642359e+01
+ Processing Data: sp285spk.mfcc; Label sp285spk.lab
+ Utterance prob per frame = -7.658923e+01
+ Processing Data: sp285spl.mfcc; Label sp285spl.lab
+ Utterance prob per frame = -7.387458e+01
+ Processing Data: sp314spk.mfcc; Label sp314spk.lab
+ Utterance prob per frame = -7.428901e+01
+ Processing Data: sp314spl.mfcc; Label sp314spl.lab
+ Utterance prob per frame = -7.195468e+01
+ Processing Data: sp359spk.mfcc; Label sp359spk.lab
+ Utterance prob per frame = -6.935210e+01
+ Processing Data: sp359spl.mfcc; Label sp359spl.lab
+ Utterance prob per frame = -6.952685e+01
+ Processing Data: sp393spk.mfcc; Label sp393spk.lab
+ Utterance prob per frame = -7.888763e+01
+ Processing Data: sp393spl.mfcc; Label sp393spl.lab
+ Utterance prob per frame = -7.163695e+01
+ Processing Data: sp447spk.mfcc; Label sp447spk.lab
+ Utterance prob per frame = -6.920173e+01
+ Processing Data: sp447spl.mfcc; Label sp447spl.lab
+ Utterance prob per frame = -7.013450e+01
+ Processing Data: sp488spk.mfcc; Label sp488spk.lab
+ Utterance prob per frame = -7.766175e+01
+ Processing Data: sp488spl.mfcc; Label sp488spl.lab
+ Utterance prob per frame = -7.287578e+01
+ Processing Data: sp512spk.mfcc; Label sp512spk.lab
+ Utterance prob per frame = -7.042778e+01
+ Processing Data: sp512spl.mfcc; Label sp512spl.lab
+ Utterance prob per frame = -7.452089e+01
+ Processing Data: sp544spk.mfcc; Label sp544spk.lab
+ Utterance prob per frame = -7.211212e+01
+ Processing Data: sp544spl.mfcc; Label sp544spl.lab
+ Utterance prob per frame = -6.962203e+01
+ Processing Data: sp585spk.mfcc; Label sp585spk.lab
+ Utterance prob per frame = -7.629894e+01
+ Processing Data: sp585spl.mfcc; Label sp585spl.lab
+ Utterance prob per frame = -7.312765e+01
+ Processing Data: sp003spk.mfcc; Label sp003spk.lab
+ Utterance prob per frame = -7.126193e+01
+ Processing Data: sp003spl.mfcc; Label sp003spl.lab
+ Utterance prob per frame = -6.817339e+01
+ Processing Data: sp040spk.mfcc; Label sp040spk.lab
+ Utterance prob per frame = -7.742036e+01
+ Processing Data: sp040spl.mfcc; Label sp040spl.lab
+ Utterance prob per frame = -7.088477e+01
+ Processing Data: sp083spk.mfcc; Label sp083spk.lab
+ Utterance prob per frame = -7.037824e+01
+ Processing Data: sp083spl.mfcc; Label sp083spl.lab
+ Utterance prob per frame = -7.143535e+01
+ Processing Data: sp126spk.mfcc; Label sp126spk.lab
+ Utterance prob per frame = -8.081431e+01
+ Processing Data: sp126spl.mfcc; Label sp126spl.lab
+ Utterance prob per frame = -6.927991e+01
+ Processing Data: sp175spk.mfcc; Label sp175spk.lab
+ Utterance prob per frame = -8.085017e+01
+ Processing Data: sp175spl.mfcc; Label sp175spl.lab
+ Utterance prob per frame = -6.748701e+01
+ Processing Data: sp216spk.mfcc; Label sp216spk.lab
+ Utterance prob per frame = -8.176257e+01
+ Processing Data: sp216spl.mfcc; Label sp216spl.lab
+ Utterance prob per frame = -7.005946e+01
+ Processing Data: sp267spk.mfcc; Label sp267spk.lab
+ Utterance prob per frame = -8.184811e+01
+ Processing Data: sp267spl.mfcc; Label sp267spl.lab
+ Utterance prob per frame = -7.046027e+01
+ Processing Data: sp298spk.mfcc; Label sp298spk.lab
+ Utterance prob per frame = -7.786267e+01
+ Processing Data: sp298spl.mfcc; Label sp298spl.lab
+ Utterance prob per frame = -7.125618e+01
+ Processing Data: sp336spk.mfcc; Label sp336spk.lab
+ Utterance prob per frame = -7.907997e+01
+ Processing Data: sp336spl.mfcc; Label sp336spl.lab
+ Utterance prob per frame = -7.248094e+01
+ Processing Data: sp375spk.mfcc; Label sp375spk.lab
+ Utterance prob per frame = -7.723113e+01
+ Processing Data: sp375spl.mfcc; Label sp375spl.lab
+ Utterance prob per frame = -7.183794e+01
+ Processing Data: sp398spk.mfcc; Label sp398spk.lab
+ Utterance prob per frame = -7.597114e+01
+ Processing Data: sp398spl.mfcc; Label sp398spl.lab
+ Utterance prob per frame = -7.129920e+01
+ Processing Data: sp463spk.mfcc; Label sp463spk.lab
+ Utterance prob per frame = -7.573338e+01
+ Processing Data: sp463spl.mfcc; Label sp463spl.lab
+ Utterance prob per frame = -7.170455e+01
+ Processing Data: sp502spk.mfcc; Label sp502spk.lab
+ Utterance prob per frame = -7.349420e+01
+ Processing Data: sp502spl.mfcc; Label sp502spl.lab
+ Utterance prob per frame = -7.186991e+01
+ Processing Data: sp524spk.mfcc; Label sp524spk.lab
+ Utterance prob per frame = -8.480729e+01
+ Processing Data: sp524spl.mfcc; Label sp524spl.lab
+ Utterance prob per frame = -7.295071e+01
+ Processing Data: sp569spk.mfcc; Label sp569spk.lab
+ Utterance prob per frame = -7.602882e+01
+ Processing Data: sp569spl.mfcc; Label sp569spl.lab
+ Utterance prob per frame = -7.330526e+01
+ Processing Data: sp004spk.mfcc; Label sp004spk.lab
+ Utterance prob per frame = -7.317613e+01
+ Processing Data: sp004spl.mfcc; Label sp004spl.lab
+ Utterance prob per frame = -7.564118e+01
+ Processing Data: sp046spk.mfcc; Label sp046spk.lab
+ Utterance prob per frame = -7.570767e+01
+ Processing Data: sp046spl.mfcc; Label sp046spl.lab
+ Utterance prob per frame = -7.927100e+01
+ Processing Data: sp089spk.mfcc; Label sp089spk.lab
+ Utterance prob per frame = -7.526543e+01
+ Processing Data: sp089spl.mfcc; Label sp089spl.lab
+ Utterance prob per frame = -7.769536e+01
+ Processing Data: sp131spk.mfcc; Label sp131spk.lab
+ Utterance prob per frame = -8.451329e+01
+ Processing Data: sp131spl.mfcc; Label sp131spl.lab
+ Utterance prob per frame = -7.793167e+01
+ Processing Data: sp177spk.mfcc; Label sp177spk.lab
+ Utterance prob per frame = -7.448284e+01
+ Processing Data: sp177spl.mfcc; Label sp177spl.lab
+ Utterance prob per frame = -7.462292e+01
+ Processing Data: sp218spk.mfcc; Label sp218spk.lab
+ Utterance prob per frame = -7.607943e+01
+ Processing Data: sp218spl.mfcc; Label sp218spl.lab
+ Utterance prob per frame = -7.776828e+01
+ Processing Data: sp273spk.mfcc; Label sp273spk.lab
+ Utterance prob per frame = -7.673398e+01
+ Processing Data: sp273spl.mfcc; Label sp273spl.lab
+ Utterance prob per frame = -7.435317e+01
+ Processing Data: sp300spk.mfcc; Label sp300spk.lab
+ Utterance prob per frame = -7.644624e+01
+ Processing Data: sp300spl.mfcc; Label sp300spl.lab
+ Utterance prob per frame = -7.527788e+01
+ Processing Data: sp337spk.mfcc; Label sp337spk.lab
+ Utterance prob per frame = -8.023919e+01
+ Processing Data: sp337spl.mfcc; Label sp337spl.lab
+ Utterance prob per frame = -7.940850e+01
+ Processing Data: sp376spk.mfcc; Label sp376spk.lab
+ Utterance prob per frame = -7.508712e+01
+ Processing Data: sp376spl.mfcc; Label sp376spl.lab
+ Utterance prob per frame = -8.160838e+01
+ Processing Data: sp400spk.mfcc; Label sp400spk.lab
+ Utterance prob per frame = -7.981846e+01
+ Processing Data: sp400spl.mfcc; Label sp400spl.lab
+ Utterance prob per frame = -7.874778e+01
+ Processing Data: sp464spk.mfcc; Label sp464spk.lab
+ Utterance prob per frame = -7.268799e+01
+ Processing Data: sp464spl.mfcc; Label sp464spl.lab
+ Utterance prob per frame = -8.363660e+01
+ Processing Data: sp505spk.mfcc; Label sp505spk.lab
+ Utterance prob per frame = -7.344172e+01
+ Processing Data: sp505spl.mfcc; Label sp505spl.lab
+ Utterance prob per frame = -7.146141e+01
+ Processing Data: sp526spk.mfcc; Label sp526spk.lab
+ Utterance prob per frame = -7.372015e+01
+ Processing Data: sp526spl.mfcc; Label sp526spl.lab
+ Utterance prob per frame = -7.298606e+01
+ Processing Data: sp574spk.mfcc; Label sp574spk.lab
+ Utterance prob per frame = -7.632761e+01
+ Processing Data: sp574spl.mfcc; Label sp574spl.lab
+ Utterance prob per frame = -8.057300e+01
+Total 705 floored variance elements in 131 different mixes
+Saving hmm's to dir Current
+Reestimation complete - average log prob per frame = -7.318207e+01
+     - total frames seen          = 1.554810e+05
