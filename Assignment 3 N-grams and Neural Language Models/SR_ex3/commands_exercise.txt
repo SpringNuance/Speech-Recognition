@@ -1,0 +1,150 @@
+cd SR_ex3
+
+# You must run this command before running any SRILM tools
+PATH="$PATH:/work/courses/T/S/89/5150/general/bin/srilm"
+
+# Exercise 1
+ngram-count -order 1 -text train.txt
+
+# Exercise 2
+ngram-count -order 2 -text train.txt | grep "^is"
+ngram-count -order 3 -text train.txt | grep "^in the"
+
+# Exercise 3
+
+ngram-count -order 2 -interpolate -cdiscount1 0 -cdiscount2 0.5 \
+-text train.txt -lm 2gram.lm
+
+ngram -lm 2gram.lm -ppl train.txt -debug 2
+
+// Instead of computing estimates by hand, we can use ngram-count tool to compute the language model.
+ngram-count -order 2 -interpolate -cdiscount1 0 -cdiscount2 0.5 \
+-text train.txt -lm 2gram.lm
+
+
+// The above command trains a 2-gram model 2gram.lm using interpolated absolute discounting (D=0.5). 
+// The discounting term (D) must be specified for each n-gram order separately. 
+// For order 1, we use zero, because we do not want to smooth 1-gram estimates. 
+// The generated model file is in a text format, so you can take a look at it. 
+// It is a standard ARPA format for n-gram models
+
+// Now we have generated an n-gram model and we can use the ngram tool to compute probabilities 
+// for new sentences. Create a file test.txt that contains the following sentences
+
+
+// The probabilities can be computed as follows. 
+// Note that the tool outputs log-probabilities (base 10) since the probabilities are often very small. 
+// To transform log probabilities back to the regular probabilities you need to raise 10 to the 
+// logprob power.
+
+ngram -lm 2gram.lm -ppl test.txt -debug 1
+
+// If you use the flag -debug 2 , you see the probabilities for each n-gram separately. 
+// You can check that P( in | is ) and P( </s> | is ) match with what you computed in Question 3.
+
+ngram -lm 2gram.lm -ppl test.txt -debug 2
+
+# Exercise 4
+
+(a) What are the log-probabilities of the above sentences?
+
+ngram-count -order 2 -interpolate -cdiscount1 0 -cdiscount2 0.5 \
+-text train.txt -lm 2gram.lm
+
+ngram -lm 2gram.lm -ppl test.txt -debug 2
+
+(c) Give an example of a sentence (non-empty, no out-of-vocabulary words) whose probability is even higher than any of the above.
+
+// For generating 10 sentences
+ngram -lm 2gram.lm -gen 10
+
+// However to know the probabilities, you need to run this shell script
+chmod +x task4c.sh
+./task4c.sh
+
+
+
+# Exercise 5
+// The language model files we are going to create in the last part of the exercise can be quite large (around 100-200 megabytes). If you don't have enough space in your home directory (check with quota ) you can
+// also run the experiments in a temporary directory under /tmp . Note, however, that the /tmp is a local directory, you can access the files only on the same workstation. Also, the files are not backuped and the
+// system may remove old files automatically during night. If you need to use the temporary directory, write the following:
+
+
+mkdir -p /tmp/$USER
+cd /tmp/$USER
+
+// Next we create real Finnish n-gram models using a large text corpus of 1.5 million sentences. The training data is in a compressed file /work/courses/T/S/89/5150/general/data/stt/stt.train.txt.utf8.gz .
+// Take a look at the training data (press q to quit zless):
+
+zless /work/courses/T/S/89/5150/general/data/stt/stt.train.txt.utf8.gz
+
+// We are going to make a language model that allows the most common 60000 words from the corpus. 
+// Use ngram-count to compute the 1-gram counts from the corpus, and write the counts in a file using -write countsfile option.
+
+ngram-count -order 1 -text /work/courses/T/S/89/5150/general/data/stt/stt.train.txt.utf8.gz -write countsfile_1gram.txt
+
+// Take a look at the counts file you created. Let's sort the words by the counts and select only the 60000 most common words (the corpus actually contains over 800000 different word forms).
+
+sort -n -r -k 2 countsfile_1gram.txt | head -n 60000 | cut -f 1 > 60000.words
+
+// Create a 1-gram model using Kneser-Ney smoothing, including only the most common 60000 words:
+
+ngram-count -order 1 -vocab 60000.words \
+-interpolate -text /work/courses/T/S/89/5150/general/data/stt/stt.train.txt.utf8.gz \
+-lm 1gram.lm.gz
+
+// Create a 2-gram model using Kneser-Ney smoothing, including only the most common 60000 words:
+
+ngram-count -order 2 -vocab 60000.words -kndiscount1 -kndiscount2 \
+-interpolate -text /work/courses/T/S/89/5150/general/data/stt/stt.train.txt.utf8.gz \
+-lm 2gram.lm.gz
+
+// Create a 3-gram model using Kneser-Ney smoothing, including only the most common 60000 words:
+
+ngram-count -order 3 -vocab 60000.words -kndiscount1 -kndiscount2 -kndiscount3 \
+-interpolate -text /work/courses/T/S/89/5150/general/data/stt/stt.train.txt.utf8.gz \
+-lm 3gram.lm.gz
+
+When training a 1-gram model, omit the -kndiscountX flags altogether, since we can not smooth 1-gram
+models. When training a 3-gram, you need to use all -kndiscount1 -kndiscount2 -kndiscount3 flags to enable Kneser-Ney smoothing for all orders. You can ignore the "warning: no singleton counts" for 1-
+gram training.
+
+// Use the ngram tool to compute the log-probability of the test data for each model 
+// (omit the -debug flag to avoid excess output).
+
+ngram -lm 1gram.lm.gz -ppl /work/courses/T/S/89/5150/general/data/stt/stt.eval.txt.utf8.gz
+ngram -lm 2gram.lm.gz -ppl /work/courses/T/S/89/5150/general/data/stt/stt.eval.txt.utf8.gz
+ngram -lm 3gram.lm.gz -ppl /work/courses/T/S/89/5150/general/data/stt/stt.eval.txt.utf8.gz
+
+# Exercise 6
+
+// A vocabulary of 60000 most common words is usually enough for languages such as English, but for Finnish it does not cover the language very well. 
+// Remember that there were over 800000 distinct words in the training data. On the other hand, increasing the vocabulary size radically can be cumbersome for speech recognition algorithms.
+// One solution is to split the words in the training data into shorter units and build an n-gram model over those units. 
+// One can for example use the Morfessor algorithm, which splits words into morpheme-like units (morphs) that can be efficiently modeled. 
+// The file /work/courses/T/S/89/5150/general/data/stt/stt.train.mrf.utf8.gz contains the training data split into morphs by using Morfessor. Take a look at the file using zless. 
+
+zless /work/courses/T/S/89/5150/general/data/stt/stt.train.mrf.utf8.gz
+
+// Note that the end of each word is marked with an underscore character '_'.
+
+// Train 1-gram, 2-gram and 3-gram morph models similarly as we trained word models. 
+// Just use the morphed training data, and omit the -vocab 60000.words flag. 
+// You can ignore the "warning: discount coeff 1 is out of range: -0" for 1-gram training
+
+// For 1gram morphed model
+ngram-count -order 1 -interpolate -text \
+/work/courses/T/S/89/5150/general/data/stt/stt.train.mrf.utf8.gz -lm 1gram.mrf.lm.gz
+
+// For 2gram morphed model
+ngram-count -order 2 -kndiscount1 -kndiscount2 -interpolate -text \
+/work/courses/T/S/89/5150/general/data/stt/stt.train.mrf.utf8.gz -lm 2gram.mrf.lm.gz
+
+// For 3gram morphed model
+ngram-count -order 3 -kndiscount1 -kndiscount2 -kndiscount3 -interpolate -text \
+/work/courses/T/S/89/5150/general/data/stt/stt.train.mrf.utf8.gz -lm 3gram.mrf.lm.gz
+
+Finally, we run these commands for testing the three trained models above
+ngram -lm 1gram.mrf.lm.gz -ppl /work/courses/T/S/89/5150/general/data/stt/stt.eval.mrf.utf8.gz
+ngram -lm 2gram.mrf.lm.gz -ppl /work/courses/T/S/89/5150/general/data/stt/stt.eval.mrf.utf8.gz
+ngram -lm 3gram.mrf.lm.gz -ppl /work/courses/T/S/89/5150/general/data/stt/stt.eval.mrf.utf8.gz

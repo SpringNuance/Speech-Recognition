@@ -1,0 +1,3 @@
+<s> the box is in the bag </s>
+<s> it is in a bag on the box </s>
+<s> is the box in it </s>

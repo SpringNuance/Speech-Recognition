@@ -1,0 +1,18 @@
+mkdir SR_ex3
+cd SR_ex3
+
+PATH="$PATH:/work/courses/T/S/89/5150/general/bin/srilm"
+
+If your shell is /bin/tcsh , type
+set path = ($path /work/courses/T/S/89/5150/general/bin/srilm)
+
+# The ngram-count command can be used for computing how many times different n-grams 
+# appear in the training data. You can obtain 1-gram counts with the following command:
+# Try computing also 2-gram counts and 3-gram counts by changing the -order parameter. 
+
+# More options in official documentations
+http://www.speech.sri.com/projects/srilm/manpages/ngram-count.1.html
+
+ngram-count -order 1 -text train.txt
+ngram-count -order 2 -text train.txt
+ngram-count -order 3 -text train.txt

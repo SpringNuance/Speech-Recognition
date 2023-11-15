@@ -1,0 +1,73 @@
+<s> it the it </s>
+	p( it | <s> ) 	= [2gram] 0.212121 [ -0.673416 ]
+	p( the | it ...) 	= [1gram] 0.0909091 [ -1.04139 ]
+	p( it | the ...) 	= [1gram] 0.0227272 [ -1.64345 ]
+	p( </s> | it ...) 	= [2gram] 0.318182 [ -0.497325 ]
+1 sentences, 3 words, 0 OOVs
+0 zeroprobs, logprob= -3.85559 ppl= 9.2023 ppl1= 19.2839
+
+<s> on is in </s>
+	p( on | <s> ) 	= [1gram] 0.0227273 [ -1.64345 ]
+	p( is | on ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+	p( in | is ...) 	= [2gram] 0.545455 [ -0.263241 ]
+	p( </s> | in ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+1 sentences, 3 words, 0 OOVs
+0 zeroprobs, logprob= -4.23936 ppl= 11.4773 ppl1= 25.8892
+
+<s> it in it </s>
+	p( it | <s> ) 	= [2gram] 0.212121 [ -0.673416 ]
+	p( in | it ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+	p( it | in ...) 	= [2gram] 0.212121 [ -0.673416 ]
+	p( </s> | it ...) 	= [2gram] 0.318182 [ -0.497325 ]
+1 sentences, 3 words, 0 OOVs
+0 zeroprobs, logprob= -3.01049 ppl= 5.65747 ppl1= 10.0808
+
+<s> the box </s>
+	p( the | <s> ) 	= [2gram] 0.257576 [ -0.589095 ]
+	p( box | the ...) 	= [2gram] 0.659091 [ -0.181055 ]
+	p( </s> | box ...) 	= [2gram] 0.234848 [ -0.629212 ]
+1 sentences, 2 words, 0 OOVs
+0 zeroprobs, logprob= -1.39936 ppl= 2.92721 ppl1= 5.00819
+
+<s> bag box in </s>
+	p( bag | <s> ) 	= [1gram] 0.0454545 [ -1.34242 ]
+	p( box | bag ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+	p( in | box ...) 	= [2gram] 0.234848 [ -0.629212 ]
+	p( </s> | in ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+1 sentences, 3 words, 0 OOVs
+0 zeroprobs, logprob= -4.3043 ppl= 11.9145 ppl1= 27.2124
+
+<s> it is in </s>
+	p( it | <s> ) 	= [2gram] 0.212121 [ -0.673416 ]
+	p( is | it ...) 	= [2gram] 0.318182 [ -0.497325 ]
+	p( in | is ...) 	= [2gram] 0.545455 [ -0.263241 ]
+	p( </s> | in ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+1 sentences, 3 words, 0 OOVs
+0 zeroprobs, logprob= -2.60031 ppl= 4.46764 ppl1= 7.35819
+
+<s> it </s>
+	p( it | <s> ) 	= [2gram] 0.212121 [ -0.673416 ]
+	p( </s> | it ...) 	= [2gram] 0.318182 [ -0.497325 ]
+1 sentences, 1 words, 0 OOVs
+0 zeroprobs, logprob= -1.17074 ppl= 3.8492 ppl1= 14.8163
+
+<s> it is in </s>
+	p( it | <s> ) 	= [2gram] 0.212121 [ -0.673416 ]
+	p( is | it ...) 	= [2gram] 0.318182 [ -0.497325 ]
+	p( in | is ...) 	= [2gram] 0.545455 [ -0.263241 ]
+	p( </s> | in ...) 	= [1gram] 0.0681818 [ -1.16633 ]
+1 sentences, 3 words, 0 OOVs
+0 zeroprobs, logprob= -2.60031 ppl= 4.46764 ppl1= 7.35819
+
+<s> </s>
+	p( </s> | <s> ) 	= [1gram] 0.0681818 [ -1.16633 ]
+1 sentences, 0 words, 0 OOVs
+0 zeroprobs, logprob= -1.16633 ppl= 14.6667 ppl1= undefined
+
+<s> </s>
+	p( </s> | <s> ) 	= [1gram] 0.0681818 [ -1.16633 ]
+1 sentences, 0 words, 0 OOVs
+0 zeroprobs, logprob= -1.16633 ppl= 14.6667 ppl1= undefined
+
+file temp_test.txt: 10 sentences, 21 words, 0 OOVs
+0 zeroprobs, logprob= -25.5131 ppl= 6.65279 ppl1= 16.4025
