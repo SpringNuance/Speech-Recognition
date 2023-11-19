@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="ELEC-E5510 Exercise 4">
+    <title>ELEC-E5510 Exercise 4</title>
+    <link rel=stylesheet type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!--<div class='fatwarning'>
+This exercise has not been updated yet for the 2017 course. It will be updated before the exercise session on November 24, 2017.
+</div>-->
+    <h1> ELEC-E5510 &mdash; Exercise 4: Continuous speech recognition </h1>
+
+    <p> The goal of the exercise is to get familiar with continuous speech
+        recognition using HTK and SRILM tools.
+
+    <p>Use the <a href='submission.html'>submission instructions</a> for returning your answers.
+        <b>Deadline is Wednesday 22.11.2023 at 23:59</b>.
+
+    <p><b>When doing these exercises from home use a Maari-B computer.</b>
+    <p>
+
+    <h2> Preparations </h2>
+
+    <p> The data used in the exercise is located in the directory shown below.
+        Let's set a shortcut variable and the path. If your shell is
+        <code>/bin/zsh</code> or <code>/bin/bash</code>, write:
+
+    <pre>
+data=/work/courses/T/S/89/5150/general/ex4
+PATH="$PATH:/work/courses/T/S/89/5150/general/bin"
+</pre>
+
+    <p>If your shell is <code>/bin/tcsh</code>, write:
+
+    <pre>
+set data = /work/courses/T/S/89/5150/general/ex4
+set path = ($path /work/courses/T/S/89/5150/general/bin)
+</pre>
+
+
+    <p> HTK-models used in this exercise are under <code>$data</code>,
+        with the usual names <code>config</code>, <code>macros</code> and
+        <code>hmmdefs</code>. The models have been trained from the
+        famous Wall Street Journal corpus (WSJ0), which contains about 15
+        hours of speech from 80 speakers. The models are rather complex
+        context-dependent triphone models with tied mixture
+        states. Because of their size, they are stored in binary format,
+        so unlike earlier, you can not view the model files with a text
+        editor.
+
+    <p> <b>In all of the questions, you are requested to report the commands that
+            you used to get the results.</b>
+
+    <p> Note that the evaluation sets used in this exercise are rather small,
+        so that the recognition time remains reasonable. In reality, larger
+        test sets would be preferable, so that more reliable error measurements
+        could be obtained.
+
+
+    <h2> Grammar based recognition network </h2>
+
+    <p> Continuous speech recognition always requires some language information
+        to restrict the recognition. Simple dictionary based recognition is
+        rarely enough for achieving acceptable recognition accuracy. One
+        of the simplest forms of additional language restriction is a
+        <i>task grammar</i>. It defines the allowed word sequences or
+        sentences as word networks or finite state machines. For simple
+        tasks this can be a very effective, but for more complex cases
+        defining the search network this way can be troublesome.
+
+    <p> HTK supports grammar based recognition networks
+        via <code>HParse</code> tool. Take a look at an example in HTK book
+        (available under <code>/work/courses/T/S/89/5150/general/doc</code>)
+        on page 25, page 184, or the reference pages 297-300, on how to define a grammar
+        with HTK.
+
+
+    <div class=question>
+
+        <h2> Question 1 </h2>
+
+        <h3> a) </h3>
+
+        <p> The picture below defines an artificial grammar for simple
+            statement sentences. Define a corresponding grammar in HTK
+            format and convert it to a recognition network using <code>HParse</code>.
+
+        <p> <img src="grammar.png" alt="[Grammar definition]" />
+
+
+        <p> In the grammar definition you need to escape the sentence start
+            symbol as \&lt;s\&gt; and the sentence end symbol as
+            \&lt;\/s\&gt;. The tool is also case sensitive. Once converted, you can test that the grammar gives
+            only allowable sentences by looking at the output
+            of <code>HSGen</code>:
+        <pre>
+HSGen grammar_net.htk $data/grammar.vocab
+</pre>
+
+        <p> where grammar_net.htk is the network compiled with <code>HParse</code>.
+
+        <p> Using the recognition network and the above mentioned models,
+            recognize a small test set <code>$data/grammar.scp</code>.
+            Use <code>HVite</code> for decoding, such as:
+
+        <pre>
+HVite -T 1 -i grammar.rec -H $data/macros -H $data/hmmdefs \
+  -C $data/config -w grammar_net.htk -s 10.0 -t 200.0 \
+  -S $data/grammar.scp $data/grammar.dict $data/tiedlist
+</pre>
+
+        <p> Include in the report the <b>grammar definition you constructed, the
+                commands you used, and the individual recognition results as
+                reported by <code>HResults</code>:</b>
+        <pre>
+HResults -h -t -I $data/grammar.mlf /dev/null grammar.rec
+</pre>
+
+        <p> <b>Why</b> did the recognizer make mistakes?
+
+
+        <h3> b) </h3>
+
+        <p> Let's try the same recognition task with an n-gram language model.
+            File <code>$data/grammar.sent</code> includes training sentences
+            generated from the grammar. These were generated using HTK
+            tool <code>HSGen</code>. Using SRI tool <code>ngram-count</code>
+            as instructed in <a href='ex3.html'>Exercise 3</a>, train two 2-gram models, <b>with and
+                without smoothing</b> (for the smoothed model, use options
+            <code>-interpolate -cdiscount1 0 -cdiscount2 0.5</code>).
+
+        <p> You need to modify the unsmoothed language model in a text editor
+            (it is text-based ARPA format), because ngram-count compensates
+            round-off errors with non-infinite back-off weights: Under
+            \1-grams: section, replace all back-off weights (the third column)
+            with -99, which represents minus infinite. This makes sure the
+            language model can not generate unseen word sequences.
+
+        <p> Build a recognition network out of the language models with
+            <code>HBuild</code>. For example,
+        <pre>
+HBuild -s "&lt;s&gt;" "&lt;/s&gt;" -n grammar_2gram.lm $data/grammar.vocab grammar_2gram_net.htk
+</pre>
+
+        <p> creates a recognition network from 2-gram model
+            <code>grammar_2gram.lm</code>. Run the recognition and see the results
+            with <code>HResults</code> as in part a). <b>Include the commands and
+                the output of <code>HResults</code> to the report.</b>
+
+            <b>How did the recognition results change</b> with these language models?
+            Explain <b>why.</b>
+
+    </div>
+
+    <h2> A note about HResults output </h2>
+
+    <p> Now that we are evaluating continuous speech recognition, we can
+        take a closer look at the error measures reported
+        by <code>HResults</code>. The tool divides the errors to three
+        categories: substitutions, deletions, and insertions. These refer
+        to the word level editing operations needed to match the
+        transcription to the recognition hypothesis. Usually only the
+        summed Word Error Rate (WER) is used for evaluation (shown under
+        Err column), but this division can give a hint what kind of
+        mistakes the recognizer is doing.
+
+
+    <h2> Recognizing continuous speech with HVite </h2>
+
+    <p> Let's review the <code>HVite</code> recognition command in the
+        previous question. Below are explanations of each of the parameters:
+
+
+    <table>
+
+        <tr>
+            <td class=code> -T 1 </td>
+            <td> Print some progress info during
+                recognition </td>
+        </tr>
+
+        <tr>
+            <td class=code> -i grammar.rec </td>
+            <td> The file to store the
+                recognition output to </td>
+        </tr>
+
+        <tr>
+            <td class=code> -H $data/macros -H
+                $data/hmmdefs </td>
+            <td> The HMM models </td>
+        </tr>
+
+        <tr>
+            <td class=code> -C $data/config </td>
+            <td>
+                The general configuration file </td>
+        </tr>
+
+        <tr>
+            <td class=code> -w grammar_net.htk </td>
+            <td> The recognition network
+            </td>
+        </tr>
+
+        <tr>
+            <td class=code> -s 10.0 </td>
+            <td> Language model weight </td>
+        </tr>
+
+        <tr>
+            <td class=code> -t 200.0 </td>
+            <td> Beam pruning threshold </td>
+        </tr>
+
+        <tr>
+            <td class=code> -S grammar.scp </td>
+            <td> A list of files to be recognized</td>
+
+        <tr>
+            <td class=code> $data/grammar.dict </td>
+            <td> The pronunciation
+                dictionary </td>
+        </tr>
+
+        <tr>
+            <td class=code> $data/tiedlist </td>
+            <td> List of
+                triphone models </td>
+        </tr>
+
+
+    </table>
+
+
+    <p> Two important parameters worth discussing are the language model weight
+        <code>-s</code> and the beam pruning
+        threshold <code>-t</code>. The first one defines the multiplier
+        for the logarithimic likelihoods of the language model, applied
+        before summing them to the loglikelihoods of the acoustic model to
+        form the total score for each hypothesis. In
+        case of a grammar it does not have any effect as grammars
+        (usually) only define allowed sentences, not their
+        probabilities. That is, all the allowed sentences are considered
+        equally possible. N-gram models, on the other hand, operate with
+        probabilities. Remember that smoothed N-gram models make all the
+        word sequences of a given dictionary possible, although some might
+        be highly unlikely. To define the influence of the language model
+        and to adjust the "separation" between common and rare sentences,
+        language model weight is used. The larger the value, the more the
+        recognition favors common sentences defined by the language
+        model. With a small weight, language model has smaller effect and the
+        recognizer makes the decisions more according to the acoustic
+        models.
+
+    <p> Recognizing, or <i>decoding</i>, continuous speech is
+        computationally hard, and several tricks are used to make it fast
+        enough. A very common parameter in speech recognizers is the beam
+        pruning threshold, which defines the maximum logarithmic
+        likelihood difference between the best and alternative hypotheses
+        at any given time. In theory different hypotheses can be fairly
+        compared only after the acoustic and language model likelihoods
+        have been computed for the whole utterance. In practice this is
+        not computationally feasible, so the lower probability hypotheses
+        are pruned away already earlier in the decoding process. Reducing
+        the beam pruning threshold makes the recognition faster, but can
+        lower the accuracy if the recognizer abandons lower probability
+        hypotheses too aggressively. With a properly tuned beam
+        threshold, this pruning does not have significant effect to the
+        accuracy. The threshold, however, is heavily dependent on the
+        task, the language model, and the language model weight used.
+
+
+
+    <h2> Recognizing continuous speech with HDecode </h2>
+
+    <p> The <code>HVite</code> tool used in the previous question is a rather
+        simple one. Its main limitation is that it can not be used with larger
+        language models, only n-gram models up to 2-grams can be converted
+        into recognition networks with <code>HBuild</code>. A more refined
+        tool for large vocabulary continuous speech recognition is HTK's
+        <code>HDecode</code>. It is restricted to triphone acoustic
+        models, but it can natively use n-grams up to 3-grams. It is also
+        faster then <code>HVite</code>. Using <code>HDecode</code> is
+        similar to <code>HVite</code>, except that instead of a
+        recognition network, a language model is provided directly.
+        Some configurations also differ, hence an extra configuration
+        file is used in this exercise.
+
+    <p> File <code>$data/wsj_5k_eval.scp</code> contains the evaluation
+        set used in the rest of the exercise. Suitable language models are
+        provided in files <code>$data/wsj_5k.?gram.lm.gz</code>. Corresponding
+        dictionary file for <code>HDecode</code>
+        is <code>$data/wsj_5k.hdecode.dict</code>. Transcript file for
+        the evaluation set is in <code>$data/wsj_5k_eval.mlf</code>.
+        Using these files, recognizing the evaluation set with
+        <code>HDecode</code> and the 3-gram model is done as follows:
+
+    <pre>
+HDecode -T 1 -C $data/config -C $data/config.hdecode -S $data/wsj_5k_eval.scp \
+  -i results.mlf -H $data/macros -H $data/hmmdefs -t 150.0 -s 10.0 \
+  -w $data/wsj_5k.3gram.lm $data/wsj_5k.hdecode.dict $data/tiedlist 
+</pre>
+
+
+    <div class=question>
+
+        <h2> Question 2 </h2>
+
+        <h3> a) </h3>
+
+        <p> Using the 3-gram language model, recognize the WSJ evaluation set
+            with language model weights 12.0, 14.0, 16.0 and 18.0. Use beam
+            pruning threshold 200.0. <b>Report the commands you used and the
+                word error rate for each of the language model weight</b> (you can
+            omit <code>-t</code> switch in <code>HResults</code> to have less
+            output). <b>Which language model weight</b> gave the best recognition
+            results?
+
+        <h3> b) </h3>
+
+        <p> Run the recognition again with language model weights 12.0 and 18.0,
+            but now with beam pruning threshold 220.0.
+            <b>Compare the WERs to the results of the a) part. Why</b> does the larger
+            language model weight require a larger beam threshold as well?
+
+    </div>
+
+
+
+
+    <h2> Lattice rescoring and 4-gram models </h2>
+
+    <p> Sometimes even higher order n-grams than 3-grams are needed. HTK
+        does not support them as such, but we can still get past the
+        3-gram limit. Both <code>HVite</code> and <code>HDecode</code>
+        support writing recognition lattices instead of just the best
+        hypothesis. These lattices are compact representations of the
+        hypotheses considered during the recognition. The hypotheses in a
+        lattice can be <i>rescored</i> with a higher-order language model,
+        after which we can choose the resulting new best hypothesis as the
+        recognition result. Another benefit is that this rescoring
+        operation is much faster compared to full decoding. It is also possible
+        to use lattices as a basis for acoustic rescoring with a different
+        acoustic model.
+
+
+    <p> To experiment with the lattice rescoring, let's use
+        <code>HDecode</code> to create lattice representations of the
+        evaluation set. Usually a 2-gram model is enough for lattice
+        generation. Run the following:
+
+    <pre>
+mkdir lattices
+
+HDecode -T 1 -C $data/config -C $data/config.hdecode -S $data/wsj_5k_eval.scp \
+  -H $data/macros -H $data/hmmdefs -z htk -l lattices -t 175.0 -s 10.0 \
+  -w $data/wsj_5k.2gram.lm $data/wsj_5k.hdecode.dict $data/tiedlist
+</pre>
+
+    <p> Directory <code>lattices</code> now contains a separate lattice file
+        for each of the utterance in the evaluation set. The lattices
+        may be rather big, but it is important that they contain enough alternative
+        hypotheses so that rescoring is able to improve the result. Beam pruning
+        and language model weight affect the lattice generation similarly to
+        regular decoding.
+
+    <p> Lattices can be manipulated with SRILM tool <code>lattice-tool</code>.
+        For example, rescoring the generated lattices with a 4-gram model
+        is achieved with the following:
+
+    <pre>
+ls lattices/*.htk.gz > original_lattices.list
+
+lattice-tool -order 4 -in-lattice-list original_lattices.list \
+  -read-htk -lm $data/wsj_5k.4gram.lm.gz -write-htk -out-lattice-dir rescored
+</pre>
+
+    <p>The rescored lattices are placed in the <code>rescored/</code>
+        directory. Next we can use lattice-tool to find the best hypotheses
+        after rescoring and compute the word error rate.
+
+    <pre>
+ls rescored/*.htk.gz > rescored_lattices.list
+
+lattice-tool -htk-lmscale 10 -in-lattice-list rescored_lattices.list \
+  -read-htk -viterbi-decode | $data/viterbi2mlf.pl > rescored/rec.mlf
+
+HResults -h -I $data/wsj_5k_eval.mlf /dev/null rescored/rec.mlf
+</pre>
+
+    <p> Option <code>-htk-lmscale</code> defines the language model weight.
+
+
+    <div class=question>
+
+        <h2>Question 3</h2>
+
+        <p> Do the following two tasks <i><b>without</b> running HDecode
+                again</i>. <b>Report the commands used and the WER results from
+                <code>HResults</code>.</b>
+
+
+        <h3> a) </h3>
+
+        <p> Extract the recognition results from the original lattices
+            (<b>BEFORE</b> rescoring) and <b>evaluate their WER. </b>Use language model
+            weight 18.
+
+        <h3> b) </h3>
+
+        <p> Fetch the best paths from the 4-gram <b>rescored lattices</b> using
+            language model weights 10.0, 14.0, 18.0, 22.0, 26.0 and 30.0.
+            Report the WER results. <b>Which weight now gave the best result?</b>
+
+
+        <h2> Question 4 </h2>
+
+        <p> Consider different speech recognition applications. <b>When would
+                you use an n-gram model trained from a large text corpus? When would
+                you use other kinds of language models?</b>
+
+    </div>
+
+
+    <hr>
+
+    <i>elec-e5510@aalto.fi</i>
+
+</body>
+
+</html>

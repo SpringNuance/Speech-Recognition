@@ -1,0 +1,9 @@
+
+HDECODE:USEHMODEL = TRUE
+HLANGMODFILTER = 'gunzip -c $.gz'
+HNETFILTER     = 'gunzip -c $.gz'
+HNETOFILTER    = 'gzip -c > $.gz'
+RAWMITFORMAT   = T
+STARTWORD      = "<s>"
+ENDWORD        = "</s>"
+FIXBADLATS     = T

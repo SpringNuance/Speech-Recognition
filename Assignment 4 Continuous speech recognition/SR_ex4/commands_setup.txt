@@ -1,0 +1,13 @@
+mkdir SR_ex4
+cd SR_ex4
+
+The data used in the exercise is located in the directory shown below. 
+Let's set a shortcut variable and the path. 
+
+If your shell is /bin/zsh or /bin/bash, write:
+data=/work/courses/T/S/89/5150/general/ex4
+PATH="$PATH:/work/courses/T/S/89/5150/general/bin"
+
+If your shell is /bin/tcsh, write:
+set data = /work/courses/T/S/89/5150/general/ex4
+set path = ($path /work/courses/T/S/89/5150/general/bin)

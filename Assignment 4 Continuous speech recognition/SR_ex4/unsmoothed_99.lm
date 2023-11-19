@@ -1,0 +1,76 @@
+
+\data\
+ngram 1=17
+ngram 2=49
+
+\1-grams:
+-0.8129134	</s>
+-99	<s>	-99
+-1.290035	enough	-99
+-1.290035	especially	-99
+-1.290035	example	-99
+-1.290035	idea	-99
+-1.511883	illegal	-99
+-0.8129134	is	-99
+-1.113943	not	-99
+-1.511883	possible	-99
+-1.511883	simple	-99
+-1.290035	simply	-99
+-0.9890046	the	-99
+-1.290035	this	-99
+-1.290035	too	-99
+-1.511883	true	-99
+-1.511883	unique	-99
+
+\2-grams:
+-0.1760913	<s> the
+-0.4771213	<s> this
+0	enough </s>
+-1	especially illegal
+-0.30103	especially not
+-1	especially possible
+-1	especially simple
+-1	especially true
+-1	especially unique
+0	example is
+0	idea is
+-0.4771213	illegal </s>
+-0.4771213	illegal enough
+-0.4771213	illegal too
+-0.4771213	is especially
+-1.477121	is illegal
+-0.7781513	is not
+-1.477121	is possible
+-1.477121	is simple
+-0.4771213	is simply
+-1.477121	is true
+-1.477121	is unique
+-0.69897	not illegal
+-0.69897	not possible
+-0.69897	not simple
+-0.69897	not true
+-0.69897	not unique
+-0.4771213	possible </s>
+-0.4771213	possible enough
+-0.4771213	possible too
+-0.4771213	simple </s>
+-0.4771213	simple enough
+-0.4771213	simple too
+-1	simply illegal
+-0.30103	simply not
+-1	simply possible
+-1	simply simple
+-1	simply true
+-1	simply unique
+-0.30103	the example
+-0.30103	the idea
+0	this is
+0	too </s>
+-0.4771213	true </s>
+-0.4771213	true enough
+-0.4771213	true too
+-0.4771213	unique </s>
+-0.4771213	unique enough
+-0.4771213	unique too
+
+\end\

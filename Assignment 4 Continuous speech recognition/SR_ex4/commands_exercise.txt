@@ -1,0 +1,139 @@
+cd SR_ex4
+data=/work/courses/T/S/89/5150/general/ex4
+PATH="$PATH:/work/courses/T/S/89/5150/general/bin"
+
+Question 1a
+
+HParse grammar.txt grammar_net.htk
+
+// In the grammar definition you need to escape the sentence start symbol as \<s\> 
+// and the sentence end symbol as \<\/s\>. The tool is also case sensitive. 
+// Once converted, you can test that the grammar gives
+// only allowable sentences by looking at the output of HSGen:
+
+HSGen grammar_net.htk $data/grammar.vocab
+
+// where grammar_net.htk is the network compiled with HParse
+
+
+// Using the recognition network and the above mentioned models, 
+// recognize a small test set $data/grammar.scp. Use HVite for decoding, such as:
+
+HVite -T 1 -i grammar.rec -H $data/macros -H $data/hmmdefs \
+-C $data/config -w grammar_net.htk -s 10.0 -t 200.0 \
+-S $data/grammar.scp $data/grammar.dict $data/tiedlist
+
+// Include in the report the grammar definition you constructed, the commands you used, and the individual recognition results as reported by HResults:
+HResults -h -t -I $data/grammar.mlf /dev/null grammar.rec
+
+Question 1b
+UNSMOOTHED model
+
+// train an unsmoothed 2-gram model with the training sentences
+ngram-count -order 2 -text $data/grammar.sent -lm unsmoothed.lm 
+
+
+HBuild -s "<s>" "</s>" -n unsmoothed.lm $data/grammar.vocab grammar_2gram_unsmoothed_net.htk
+
+// We use this network to recognize out test set using HVite.
+
+HVite -T 1 -i grammar_unsmoothed.rec -H $data/macros -H $data/hmmdefs \
+-C $data/config -w grammar_net.htk -s 10.0 -t 200.0 \
+-S $data/grammar.scp $data/grammar.dict $data/tiedlist
+
+
+// results
+HResults -h -t -I $data/grammar.mlf /dev/null grammar_unsmoothed.rec
+
+
+SMOOTHED
+
+// train an smoothed 2-gram model with the training sentences
+
+ngram-count -order 2 -interpolate -cdiscount1 0 -cdiscount2 0.5 \
+-text $data/grammar.sent -lm smoothed.lm 
+
+// We proceed by building a recognition network out of the smoothed language model with HBuild
+
+HBuild -s "<s>" "</s>" -n smoothed.lm $data/grammar.vocab grammar_2gram_smoothed_net.htk
+
+// We use this network to recognize out test set using HVite. The result is saved in grammer s.rec
+
+HVite -T 1 -i grammar_smoothed.rec -H $data/macros -H $data/hmmdefs \
+-C $data/config -w grammar_2gram_smoothed_net.htk -s 10.0 -t 200.0 \
+-S $data/grammar.scp $data/grammar.dict $data/tiedlist
+
+// results
+HResults -h -t -I $data/grammar.mlf /dev/null grammar_smoothed.rec
+
+
+
+Question 2a
+
+for i in {12.0,14.0,16.0,18.0}; 
+do HDecode -T 1 -C $data/config -C $data/config.hdecode -S $data/wsj_5k_eval.scp \
+-i results_2a_$i.mlf -H $data/macros -H $data/hmmdefs -t 200.0 -s $i \
+-w $data/wsj_5k.3gram.lm $data/wsj_5k.hdecode.dict $data/tiedlist ; done
+
+for i in {12.0,14.0,16.0,18.0}; do HResults -h -I $data/wsj_5k_eval.mlf /dev/null results_2a_$i.mlf; done
+
+
+Question 2b
+
+for i in {12.0,18.0}; do HDecode -T 1 -C $data/config -C $data/config.hdecode -S $data/wsj_5k_eval.scp \
+-i results_2b_$i.mlf -H $data/macros -H $data/hmmdefs -t 220.0 -s $i \
+-w $data/wsj_5k.3gram.lm $data/wsj_5k.hdecode.dict $data/tiedlist ; done
+
+for i in {12.0,18.0}; do HResults -h -I $data/wsj_5k_eval.mlf /dev/null results_2b_$i.mlf; done
+
+Question 3a
+
+// To experiment with the lattice rescoring, let's use HDecode to create lattice representations 
+// of the evaluation set. Usually a 2-gram model is enough for lattice generation. Run the following:
+
+mkdir lattices
+
+HDecode -T 1 -C $data/config -C $data/config.hdecode -S $data/wsj_5k_eval.scp \
+-H $data/macros -H $data/hmmdefs -z htk -l lattices -t 175.0 -s 10.0 \
+-w $data/wsj_5k.2gram.lm $data/wsj_5k.hdecode.dict $data/tiedlist
+
+// Directory lattices now contains a separate lattice file for each of the utterance in the 
+// evaluation set. The lattices may be rather big, but it is important that they contain enough 
+// alternative hypotheses so that rescoring is able to improve the result. 
+// Beam pruning and language model weight affect the lattice generation similarly to regular decoding.
+// Lattices can be manipulated with SRILM tool lattice-tool. For example, rescoring the generated lattices with a 4-gram model is achieved with the following:
+
+ls lattices/*.htk.gz > original_lattices.list
+
+lattice-tool -order 4 -in-lattice-list original_lattices.list \
+-read-htk -lm $data/wsj_5k.4gram.lm.gz -write-htk -out-lattice-dir rescored
+
+\\ The rescored lattices are placed in the rescored/ directory. Next we can use lattice-tool to find the best hypotheses after rescoring and compute the word error rate.
+
+ls rescored/*.htk.gz > rescored_lattices.list
+
+lattice-tool -htk-lmscale 10 -in-lattice-list rescored_lattices.list \
+-read-htk -viterbi-decode | $data/viterbi2mlf.pl > rescored/rec.mlf
+
+HResults -h -I $data/wsj_5k_eval.mlf /dev/null rescored/rec.mlf
+
+\\ Option -htk-lmscale defines the language model weight.
+
+We extract the recognition results of the original lattices using:
+
+lattice-tool -htk-lmscale 18 -in-lattice-list original_lattices.list \
+-read-htk -viterbi-decode | $data/viterbi2mlf.pl > lattices/rec_w18_original.mlf
+
+HResults -h -I $data/wsj_5k_eval.mlf /dev/null lattices/rec_w18_original.mlf
+
+
+
+Question 3b
+
+for i in {10,14,18,22,26,30}; 
+do lattice-tool -htk-lmscale $i -in-lattice-list rescored_lattices.list \
+-read-htk -viterbi-decode | $data/viterbi2mlf.pl > rescored/rec_w$i.mlf;
+done
+
+for i in {10,14,18,22,26,30}; do HResults -h -I $data/wsj_5k_eval.mlf \
+/dev/null rescored/rec_w$i.mlf; done

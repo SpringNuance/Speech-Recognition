@@ -1,0 +1,9 @@
+$noun = example | idea;
+$adverb = simply | especially;
+$adj = true | illegal | possible | unique | simple;
+$adv = too | enough;
+
+( \<s\> ( ( the $noun | this) is [ $adverb ] [not] $adj [$adv] ) \<\/s\> ) 
+
+
+
